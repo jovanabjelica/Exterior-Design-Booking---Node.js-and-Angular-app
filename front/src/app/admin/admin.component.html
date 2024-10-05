@@ -1,0 +1,51 @@
+<div class="container">
+    <app-admin-side-menu></app-admin-side-menu>
+    <div class="main-content">
+        <header>
+            <h1>Vlasnici</h1>
+            <div class="links">
+                <a routerLink="/admin" class="link">Registrovani</a>
+                <a routerLink="/admin-vlasnik-zahtevi" class="link">Zahtevi</a>
+            </div>
+        </header>
+        <hr> 
+        <h2>Registrovani</h2>
+        <div class="table-container">
+            <div class="zero-state" *ngIf="vlasnici.length == 0">
+                <table>
+                    <tr>
+                        <th>Ime</th>
+                        <th>Prezime</th>
+                        <th>Korisnicko ime</th>
+                        <th>Email adresa</th>
+                        <th>Kontakt telefon</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td colspan="6" class="no-data">Trenutno nema podataka za prikazivanje</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="non-zero-state" *ngIf="vlasnici.length > 0">
+                <table>
+                    <tr>
+                        <th>Ime</th>
+                        <th>Prezime</th>
+                        <th>Korisnicko ime</th>
+                        <th>Email adresa</th>
+                        <th>Kontakt telefon</th>
+                        <th colspan="2"></th>
+                    </tr>
+                    <tr *ngFor="let zahtev of vlasnici">
+                        <td> {{ zahtev.ime }} </td>
+                        <td> {{ zahtev.prezime }} </td>
+                        <td> {{ zahtev.korisnickoIme }} </td>
+                        <td> {{ zahtev.email }} </td>
+                        <td> {{ zahtev.kontaktTelefon }} </td>
+                        <td><button class="prihvati" (click)="deaktivirajVlasnika(zahtev.korisnickoIme)">Deaktiviraj</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

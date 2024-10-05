@@ -1,0 +1,158 @@
+/* General Container styles */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden; /* Clearfix for float */
+}
+
+/* Main Section */
+.main-section {
+  height: 450px; /* Fixed height */
+  background-image: url('../../assets/static/pocetna1image.jpg'); /* Update with your image path */
+  background-size: auto 100%; /* Maintain full height of the container */
+  background-position: right center; /* Align the image to the left and center vertically */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align children (text and buttons) */
+  padding: 0 50px; /* Padding on sides */
+  width: 100%; /* Ensure full width coverage */
+  box-sizing: border-box; /* Include padding and border in width/height calculation */
+}
+
+
+/* Main Title Styles */
+.main-title {
+  font-size: 3rem; /* Large font size for visibility */
+  color: #fff; /* White color for contrast */
+  text-align: left; /* Align text to the left */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+  flex: 1; /* Takes the space it needs */
+  margin-right: 20px; /* Right margin for spacing */
+}
+
+/* Buttons Container */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align buttons to the right */
+}
+
+/* Button Styles */
+.btn {
+  background-color: #fff; /* White background */
+  color: #333; /* Dark text color for contrast */
+  border: 1px solid #ccc; /* Subtle border */
+  padding: 10px 20px; /* Padding for button size */
+  cursor: pointer; /* Cursor pointer for interactivity */
+  font-weight: bold; /* Bold font weight */
+  margin-top: 10px; /* Margin top for spacing between buttons */
+}
+
+/* Info Section Styling */
+.info-section {
+  padding: 40px 50px; /* Padding for spacing */
+  background-color: rgba(0, 0, 0, 0.85); /* Semi-transparent black background */
+  color: #fff; /* White text for contrast */
+  font-size: 0.9rem; /* Smaller font size */
+}
+
+/* Stats Container Styles */
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Evenly space the statistics */
+}
+
+/* Individual Stat Block Styles */
+.stats div {
+  width: 200px; /* Width for each stat block */
+  padding: 15px; /* Padding for spacing */
+  margin: 10px; /* Margin for separation */
+  background: rgba(50, 50, 50, 0.8); /* Slightly transparent background */
+  border-radius: 10px; /* Rounded corners for aesthetics */
+}
+
+/* Background Image Section */
+.background-image-section {
+  height: 350px; /* Adjust height as needed */
+  background-image: url('../../assets/static/pocetna2image.jpg'); /* Update the path to your image */
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the background */
+  background-repeat: no-repeat; /* No repeat */
+  width: 100%; /* Ensure it spans the full width */
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  max-height: 450px;
+  overflow-y: auto;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #ccc; 
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+  font-size: 18px; 
+}
+
+th, td {
+  padding: 15px; 
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+}
+
+th {
+  background-color: #ebe9e9;
+  font-weight: bold; 
+}
+
+tr:hover {
+  background-color: #cac8c8;
+}
+
+.zero-state .no-data {
+  text-align: center;
+  color: #888;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 48%;
+}
+
+.search-input input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
+  font-size: 16px;
+}
+
+/* Footer Styles */
+.site-footer {
+  padding: 20px 0;
+  background-color: #333; /* Dark background for the footer */
+  color: #fff; /* White text color */
+  text-align: center; /* Center-align the text */
+  font-size: 0.8rem; /* Smaller font size for the footer text */
+  width: 100%; /* Ensure the footer covers the full width */
+  box-sizing: border-box; /* Include padding in the width calculation */
+}

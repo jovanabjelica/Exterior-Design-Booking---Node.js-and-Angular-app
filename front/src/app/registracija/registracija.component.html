@@ -1,0 +1,146 @@
+<body>    
+    <div class="container">
+        <h1>Registracija</h1>
+        <form>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="korisnickoIme">Unesite korisnicko ime:</label>
+                    <input 
+                        type="text" 
+                        name="korisnickoIme" 
+                        id="korisnickoIme" [(ngModel)]="korisnickoIme" 
+                        placeholder="Korisnicko ime"
+                    >
+                    <label for="korisnickoIme" class="greska">{{ greskaKorisnickoIme }}</label>
+                </div>
+                <div class="form-group">
+                    <label for="lozinka">Unesite lozinku:</label>
+                    <input 
+                        type="password" 
+                        name="lozinka" 
+                        id="lozinka" 
+                        [(ngModel)]="lozinka" 
+                        placeholder="Lozinka"
+                    >
+                    <label for="lozinka" class="greska">{{ greskaLozinka }}</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="ime">Unesite ime:</label>
+                    <input 
+                        type="text" 
+                        name="ime" 
+                        id="ime" 
+                        [(ngModel)]="ime" 
+                        placeholder="Ime"
+                    >
+                    <label for="ime" class="greska">{{ greskaIme }}</label>
+                </div>
+                <div class="form-group">
+                    <label for="prezime">Unesite prezime:</label>
+                    <input 
+                        type="text" 
+                        name="prezime" 
+                        id="prezime" 
+                        [(ngModel)]="prezime" 
+                        placeholder="Prezime"
+                    >
+                    <label for="prezime" class="greska">{{ greskaPrezime }}</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Unesite email:</label>
+                    <input 
+                        type="text" 
+                        name="email" 
+                        id="email" 
+                        [(ngModel)]="email" 
+                        placeholder="Email"
+                    >
+                    <label for="email" class="greska">{{ greskaEmail }}</label>
+                </div>
+                <div class="form-group">
+                    <label for="adresa">Unesite adresu:</label>
+                    <input 
+                        type="text" 
+                        name="adresa" 
+                        id="adresa" 
+                        [(ngModel)]="adresa" 
+                        placeholder="Adresa"
+                    >
+                    <label for="adresa" class="greska">{{ greskaAdresa }}</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="kreditnaKartica">Unesite broj kreditne kartice:</label>
+                    <div class="input-with-icon">
+                        <input 
+                            type="text" 
+                            name="kreditnaKartica" 
+                            id="kreditnaKartica" 
+                            [(ngModel)]="kreditnaKartica" 
+                            placeholder="Kreditna kartica"
+                            (ngModelChange)="proveraFormataKreditneKartice()" 
+                        >
+                        <img *ngIf="visa" src="../../assets/static/visa.png" alt="Visa" class="card-icon">
+                        <img *ngIf="master" src="../../assets/static/mastercard.png" alt="MasterCard" class="card-icon">
+                        <img *ngIf="diners" src="../../assets/static/dinacard.png" alt="Diners Club" class="card-icon">
+                    </div>
+                    <label for="kreditnaKartica" class="greska">{{ greskaKreditnaKartica }}</label>
+                </div> 
+                <div class="form-group">
+                    <label for="telefon">Unesite kontakt telefon:</label>
+                    <input 
+                        type="text" 
+                        name="telefon" 
+                        id="telefon" 
+                        [(ngModel)]="telefon" 
+                        placeholder="Telefon"
+                    >
+                    <label for="telefon" class="greska">{{ greskaTelefon }}</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="pol">Odaberite pol:</label>
+                    <select 
+                        name="pol" 
+                        id="pol" 
+                        [(ngModel)]="pol"
+                    >
+                            <option value="M" class="option">Muski</option>
+                            <option value="Z" class="option">Zenski</option>
+                    </select>
+                    <label for="pol" class="greska">{{ greskaPol }}</label>
+                </div>
+                <div class="form-group">
+                    <label for="picture">Odaberite profilnu sliku:</label>
+                    <input 
+                        type="file" 
+                        name="picture" 
+                        id="picture" 
+                        accept=".png, .jpg" 
+                        (change)="odabirSlike($event)"
+                    >
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <button class="button" (click)="registracija()">Registracija</button>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <p class="linkovi">
+                        Imate nalog? Prijavite se <a routerLink="/prijava">ovde</a>. 
+                        <br>
+                        Zelite da promenite lozinku? Kliknite <a routerLink="/promena-lozinke">ovde</a>.
+                    </p>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>

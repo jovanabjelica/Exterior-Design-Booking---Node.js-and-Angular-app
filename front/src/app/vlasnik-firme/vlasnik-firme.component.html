@@ -1,0 +1,77 @@
+<div class="container">
+    <app-vlasnik-side-menu></app-vlasnik-side-menu>
+    <div class="main-content">
+        <header>
+            <h1>Firme</h1>
+        </header>
+        <div id="myModal" class="modal" *ngIf="firma!=null">
+            <div class="modal-content">
+                <span class="close" (click)="zatvoriModal()">&times;</span>
+                <div class="modal-container">
+                    <h2>{{ firma.naziv }}</h2>
+                    <table>
+                        <tr>
+                            <th>Email</th>
+                        </tr>
+                        <tr *ngFor="let z of firma.zaposleni">
+                            <td><a [attr.href]="'mailto:' + z">{{ z }}</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="search-container">
+            <div class="search-input">
+                <input type="text" placeholder="Pretrazi po nazivu firme" [(ngModel)]="pretragaNaziv" (input)="onSearchChange($event)">
+            </div>
+            <div class="search-input">
+                <input type="text" placeholder="Pretrazi po adresi firme" [(ngModel)]="pretragaAdresa" (input)="onSearchChange($event)">
+            </div>
+        </div>
+
+        <div class="table-container">
+            <div class="zero-state" *ngIf="firme.length == 0">
+                <table>
+                    <tr>
+                        <th>Naziv</th>
+                        <th>Adresa</th>
+                        <th>Kontakt osoba</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td colspan="6" class="no-data">Trenutno nema podataka za prikazivanje</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="non-zero-state" *ngIf="firme.length > 0">
+                <table>
+                    <tr>
+                        <th (click)="sortirajFirmePoNazivu()">Naziv 
+                            <span *ngIf="!sortiranePoNazivuRastuce">&#9650;</span> 
+                            <span *ngIf="sortiranePoNazivuRastuce">&#9660;</span>
+                        </th>
+                        <th (click)="sortirajFirmePoAdresi()">Adresa 
+                            <span *ngIf="!sortiranePoAdresiRastuce">&#9650;</span> 
+                            <span *ngIf="sortiranePoAdresiRastuce">&#9660;</span>
+                        </th>
+                        <th>Kontakt osoba</th>
+                        <th>Zaposleni</th>
+                        <th>Ocena</th>
+                        <th></th>
+                    </tr>
+                    <tr *ngFor="let firma of firme">
+                        <td> {{ firma.naziv }} </td>
+                        <td> {{ firma.adresa }} </td>
+                        <td><a [attr.href]="'mailto:' + firma.kontakt_osoba"> {{ firma.kontakt_osoba }} </a></td>
+                        <td><button class="button" (click)="otvoriModal(firma)">Prikazi zaposlene</button></td>
+                        <td *ngIf="firma.ocena">{{ firma.ocena }}</td>
+                        <td *ngIf="!firma.ocena">/</td>
+                        <td><a [routerLink]="['/vlasnik-firma', korisnik, firma.naziv]">Detalji</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

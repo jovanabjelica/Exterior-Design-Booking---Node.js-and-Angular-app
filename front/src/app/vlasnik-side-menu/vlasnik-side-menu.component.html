@@ -1,0 +1,38 @@
+<div class="side-menu">
+    <div class="menu-header">
+        <h1>Vaša mašta Vaša bašta</h1>
+        <h2>Menu</h2>
+    </div>
+    <ul class="menu-list">
+        <li class="menu-item">
+            <a [routerLink]="['/vlasnik-profil', vlasnik.korisnickoIme]">
+                <img src="../../assets/static/profil icon.jpg" alt="Profil" class="menu-icon">
+                Profil
+            </a>
+        </li>
+        <li class="menu-item">
+            <a [routerLink]="['/vlasnik-firme', vlasnik.korisnickoIme]">
+                <img src="../../assets/static/company transparent icon.jpg" alt="Firme" class="menu-icon">
+                Firme
+            </a>
+        </li>
+        <li class="menu-item">
+            <a [routerLink]="['/vlasnik-zakazivanje', vlasnik.korisnickoIme]">
+                <img src="../../assets/static/appointment icon.jpg" alt="Zakazivanje" class="menu-icon">
+                Zakazivanja
+            </a>
+        </li>
+        <li class="menu-item">
+            <a [routerLink]="['/vlasnik-odrzavanje', vlasnik.korisnickoIme]">
+                <img src="../../assets/static/maintenance icon.jpg" alt="Odrzavanje" class="menu-icon">
+                Odrzavanja
+            </a>
+        </li>
+        <li class="menu-item">
+            <a routerLink="/prijava">
+                <img src="../../assets/static/log out icon.jpg" alt="Odjava" class="menu-icon">
+                Odjava
+            </a>
+        </li>
+    </ul>
+</div>

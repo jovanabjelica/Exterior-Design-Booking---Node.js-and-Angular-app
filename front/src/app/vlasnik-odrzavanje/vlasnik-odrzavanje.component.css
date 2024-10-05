@@ -1,0 +1,101 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; 
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f8f2f2; 
+}
+
+.main-content h1 {
+    font-size: 36px; 
+    margin: 0;
+    color: #333; 
+}
+
+.main-content header {
+    margin-bottom: 20px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    max-height: 220px;
+    overflow-y: auto;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #111111; 
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    border: 1px solid #ddd;
+    font-size: 18px; 
+}
+
+th, td {
+    padding: 15px; 
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+}
+
+th {
+    background-color: #ebe9e9;
+    font-weight: bold; 
+}
+
+tr:hover {
+    background-color: #cac8c8;
+}
+
+.zero-state .no-data {
+    text-align: center;
+    color: #888;
+}
+
+button {
+    padding: 7px 7px; 
+    border: 1px solid #ccc; 
+    font-size: 15px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    background-color: #333;
+    margin-top: 10px;
+}
+
+.disabled {
+    border-radius: 4px; 
+    cursor: pointer; 
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    background-color: #8f8484;
+    margin-top: 10px;
+}

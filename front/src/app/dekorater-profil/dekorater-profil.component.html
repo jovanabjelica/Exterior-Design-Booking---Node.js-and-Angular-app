@@ -1,0 +1,191 @@
+<div class="container">
+    <app-dekorater-side-menu></app-dekorater-side-menu>
+    <div class="main-content">
+        <header>
+            <h1>Profil</h1>
+        </header>
+        <div class="profile-picture" *ngIf="!vlasnik.profilnaSlika">
+            <img src="../../assets/static/default profile picture.jpg" alt="Profilna slika">
+        </div>
+        <div class="profile-picture" *ngIf="vlasnik.profilnaSlika">
+            <img [src]="'../../assets/pic/' + vlasnik.korisnickoIme + '.jpg'" alt="Profilna slika">
+        </div>
+        <div class="profile-content">
+            <div class="profile-info">
+                <hr>
+                <div class="profile-row">
+                    <label>Azurirajte profilnu sliku:</label>
+                    <div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input 
+                                        type="file" 
+                                        name="picture" 
+                                        id="picture" 
+                                        accept=".png, .jpg" 
+                                        (change)="odabirSlike($event)"
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="picture" class="greska">{{ greskaSlika }}</label></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>               
+                <hr>
+                <div class="profile-row">
+                    <label>Korisnicko ime:</label>
+                    <div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input 
+                                        type="text" 
+                                        name="korisnickoIme" 
+                                        id="korisnickoIme"
+                                        [(ngModel)]="korisnickoIme"
+                                        value="{{ vlasnik.korisnickoIme }}"
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="korisnickoIme" class="greska">{{ greskaKorisnickoIme }}</label></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+                <div class="profile-row">
+                    <label>Ime:</label>
+                    <div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input 
+                                        type="text" 
+                                        name="ime" 
+                                        id="ime"
+                                        [(ngModel)]="ime"
+                                        value="{{ vlasnik.ime }}"
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="ime" class="greska">{{ greskaIme }}</label></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+                <div class="profile-row">
+                    <label>Prezime:</label>
+                    <div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input 
+                                        type="text" 
+                                        name="prezime" 
+                                        id="prezime"
+                                        [(ngModel)]="prezime"
+                                        value="{{ vlasnik.prezime }}"
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="prezime" class="greska">{{ greskaPrezime }}</label></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+                <div class="profile-row">
+                    <label>Email:</label>
+                    <div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input 
+                                        type="text" 
+                                        name="email" 
+                                        id="email"
+                                        [(ngModel)]="email"
+                                        value="{{ vlasnik.email }}"
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="email" class="greska">{{ greskaEmail }}</label></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+                <div class="profile-row">
+                    <label>Adresa:</label>
+                    <div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input 
+                                        type="text" 
+                                        name="adresa" 
+                                        id="adresa"
+                                        [(ngModel)]="adresa"
+                                        value="{{ vlasnik.adresa }}"
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="adresa" class="greska">{{ greskaAdresa }}</label></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+                <div class="profile-row">
+                    <label>Kontakt telefon:</label>
+                    <div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input 
+                                        type="text" 
+                                        name="kontaktTelefon" 
+                                        id="kontaktTelefon"
+                                        [(ngModel)]="kontaktTelefon"
+                                        value="{{ vlasnik.kontaktTelefon }}"
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="kontaktTelefon" class="greska">{{ greskaKontaktTelefon }}</label></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+                <div class="profile-row">
+                    <label>Kreditna kartica:</label>
+                    <div>
+                        <input 
+                            type="text" 
+                            name="kreditnaKartica" 
+                            id="kreditnaKartica"
+                            value="{{ vlasnik.brojKreditneKartice }}"
+                            [(ngModel)]="kreditnaKartica"
+                            (ngModelChange)="proveraFormataKreditneKartice()" 
+                        >
+                        <img *ngIf="visa" src="../../assets/static/visa.png" alt="Visa" class="card-icon">
+                        <img *ngIf="master" src="../../assets/static/mastercard.png" alt="MasterCard" class="card-icon">
+                        <img *ngIf="diners" src="../../assets/static/dinacard.png" alt="Diners Club" class="card-icon">
+                    </div>
+                </div>
+                <label for="kreditnaKartica" class="greska">{{ greskaKreditnaKartica }}</label>
+            </div>
+        </div>
+        <button class="save-button" (click)="azurirajPodatke()">Azuriraj podatke</button>
+    </div>
+</div>

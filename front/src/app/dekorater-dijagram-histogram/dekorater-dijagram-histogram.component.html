@@ -1,0 +1,17 @@
+<div class="container">
+    <app-dekorater-side-menu></app-dekorater-side-menu>
+    <div class="main-content">
+        <header>
+            <h1>Statistika</h1>
+            <div class="links">
+                <a [routerLink]="['/dekorater-dijagram-kolona', korisnik]" class="link">Kolona/Barovi</a>
+                <a [routerLink]="['/dekorater-dijagram-histogram', korisnik]" class="link">Histogram</a>
+                <a [routerLink]="['/dekorater-dijagram-pita', korisnik]" class="link">Pita</a>
+            </div>
+        </header>
+        <hr>
+        <div class="histogram" [chart]="histogramChart" *ngIf="histogramChart">
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,332 @@
+[{
+  "_id": {
+    "$oid": "66a40ab25c1973ed2876effe"
+  },
+  "korisnickoIme": "admin",
+  "lozinka": "3eb3fe66b31e3b4d10fa70b5cad49c7112294af6ae4e476a1c405155d45aa121",
+  "ime": "Admin",
+  "prezime": "Admin",
+  "pol": "Z",
+  "adresa": "Mirijevski venac 30",
+  "kontaktTelefon": "0669817134",
+  "email": "jbjelica24@gmail.com",
+  "brojKreditneKartice": "92929",
+  "tip": "administrator",
+  "status": "odobren",
+  "profilnaSlika": "zika.JPG"
+},
+{
+  "_id": {
+    "$oid": "66a6205104bf6cec4d7ab2e4"
+  },
+  "korisnickoIme": "jovanabjelica",
+  "lozinka": "9eb46c3e84116b473c34e02dcdf49c2a7a7a05f5b26383a7a191ba862fe9e751",
+  "ime": "Jovana",
+  "prezime": "Bjelica",
+  "pol": "Z",
+  "adresa": "Lole Ribara 8/31",
+  "kontaktTelefon": "0669817134",
+  "email": "jovanabjelica@gmail.com",
+  "brojKreditneKartice": "300588999123145",
+  "tip": "vlasnik",
+  "status": "odobren",
+  "profilnaSlika": "jovanabjelica.jpg"
+},
+{
+  "_id": {
+    "$oid": "66a6214c04bf6cec4d7ab2e8"
+  },
+  "korisnickoIme": "marijakovacevic",
+  "lozinka": "6fa3c703047ecb89c761d59238e6b493681320686316d708c4acac480858f18d",
+  "ime": "Marija",
+  "prezime": "Kovacevic",
+  "pol": "Z",
+  "adresa": "Mihaila Obrenovica 26",
+  "kontaktTelefon": "0655189926",
+  "email": "marijakovacevic@gmail.com",
+  "brojKreditneKartice": "5123567890123458",
+  "tip": "vlasnik",
+  "status": "odobren",
+  "profilnaSlika": "marijakovacevic.jpg"
+},
+{
+  "_id": {
+    "$oid": "66a621a104bf6cec4d7ab2ec"
+  },
+  "korisnickoIme": "pericabjelica",
+  "lozinka": "a697fda842e00de7baf202f1b700d4c3bcf425084be0fb62fcfb2ea9a5457c29",
+  "ime": "Perica",
+  "prezime": "Bjelica",
+  "pol": "M",
+  "adresa": "Ivo Lole Ribara 8/31",
+  "kontaktTelefon": "0642355789",
+  "email": "pericabjelica@gmail.com",
+  "brojKreditneKartice": "300233456781267",
+  "tip": "vlasnik",
+  "status": "odobren",
+  "profilnaSlika": "pericabjelica.jpg"
+},
+{
+  "_id": {
+    "$oid": "66a621eb04bf6cec4d7ab2f0"
+  },
+  "korisnickoIme": "filiptanic",
+  "lozinka": "bc7f7091e2990c4bfdf805cd5f4dfa657d2451097bcb2044c0fa368922b49161",
+  "ime": "Filip",
+  "prezime": "Tanic",
+  "pol": "M",
+  "adresa": "Borska 36a",
+  "kontaktTelefon": "0621345678",
+  "email": "filiptanic@gmail.com",
+  "brojKreditneKartice": "4539212100981234",
+  "tip": "vlasnik",
+  "status": "odobren"
+},
+{
+  "_id": {
+    "$oid": "66a622af04bf6cec4d7ab2f4"
+  },
+  "korisnickoIme": "sasaradosavljevic",
+  "lozinka": "7f82ec94faac55091c2c675acc4611eb838c9913bcf0aa8c2d700da99cd42d31",
+  "ime": "Sasa",
+  "prezime": "Radosavljevic",
+  "pol": "M",
+  "adresa": "Kneza Milana 3",
+  "kontaktTelefon": "0612345612",
+  "email": "sasaradosavljevic@gmail.com",
+  "brojKreditneKartice": "5526891243721987",
+  "tip": "vlasnik",
+  "status": "odobren"
+},
+{
+  "_id": {
+    "$oid": "66aa9126a4a97872f75a2835"
+  },
+  "korisnickoIme": "miljanavasic",
+  "lozinka": "bc21dd9803c06cb916a9c72f501b53aeacfd05cef0ed98ece4cf5fda37628544",
+  "ime": "Miljana",
+  "prezime": "Vasic",
+  "pol": "Z",
+  "kontaktTelefon": "0667895643",
+  "email": "miljanavasic@gmail.com",
+  "brojKreditneKartice": "300588999123145",
+  "tip": "dekorater",
+  "status": "odobren"
+},
+{
+  "_id": {
+    "$oid": "66aa9646a4a97872f75a284e"
+  },
+  "korisnickoIme": "stefanastefanovic",
+  "lozinka": "c8958f802358d835c09acfffb662ddf73c98ec76c7be19de720ba5c7b45e90de",
+  "ime": "Stefana",
+  "prezime": "Stefanovic",
+  "pol": "Z",
+  "kontaktTelefon": "0667895643",
+  "email": "stefanastefanovic@gmail.com",
+  "brojKreditneKartice": "300588999123145",
+  "tip": "dekorater",
+  "status": "odobren"
+},
+{
+  "_id": {
+    "$oid": "66c1021e5c3de198458b975d"
+  },
+  "korisnickoIme": "Miki ",
+  "lozinka": "34289b2415e8b5ed2c132ad2a4e224e731bfbbadf58b83934b18289afcfd6ef2",
+  "ime": "Miki ",
+  "prezime": "Milane",
+  "pol": "M",
+  "kontaktTelefon": "0667895643",
+  "email": "miki@gmail.com",
+  "brojKreditneKartice": "300588999123145",
+  "tip": "dekorater",
+  "status": "deaktiviran"
+},
+{
+  "_id": {
+    "$oid": "66c2331948d14437094d0b53"
+  },
+  "korisnickoIme": "lenkamiletic",
+  "lozinka": "17317c3b73995214cf010e55d73eb8579f09698136199fa76bfe71c4e8d87a6c",
+  "ime": "Lenka",
+  "prezime": "Miletic",
+  "pol": "Z",
+  "adresa": "Laze Kostica 3/41",
+  "kontaktTelefon": "0667895643",
+  "email": "lenkamiletic@gmail.com",
+  "brojKreditneKartice": "300588999123145",
+  "tip": "vlasnik",
+  "status": "odobren",
+  "profilnaSlika": "lenkamiletic.JPG"
+},
+{
+  "_id": {
+    "$oid": "66c233ea48d14437094d0b65"
+  },
+  "korisnickoIme": "stasamiletic",
+  "lozinka": "8ef3c0c814e67e9e5853fb9ade78a6e178e4a87f3771a00ddb518c0641cedf6c",
+  "ime": "Stasa",
+  "prezime": "Miletic",
+  "pol": "Z",
+  "adresa": "Laze Kostica 3/41",
+  "kontaktTelefon": "0667895643",
+  "email": "stasamiletic@gmail.com",
+  "brojKreditneKartice": "300588999123145",
+  "tip": "vlasnik",
+  "status": "odobren",
+  "profilnaSlika": "stasamiletic.JPG"
+},
+{
+  "_id": {
+    "$oid": "66da11641b8f32c02a436687"
+  },
+  "korisnickoIme": "olgabozovic",
+  "lozinka": "1f45ea4e9dce13289dbf9431540d184a409cf03fd784b9f8f978c59534fd8e63",
+  "ime": "Olga",
+  "prezime": "Bozovic",
+  "pol": "Z",
+  "kontaktTelefon": "0667895643",
+  "email": "olgabozovic@gmail.com",
+  "brojKreditneKartice": "5123567890123456",
+  "tip": "dekorater",
+  "status": "odobren",
+  "adresa": "undefined",
+  "profilnaSlika": "olgabozovic.jpg"
+},
+{
+  "_id": {
+    "$oid": "66da11d21b8f32c02a43668d"
+  },
+  "korisnickoIme": "denisedesire",
+  "lozinka": "e26efdb264ecbadc79ae79ec7bc8f8d9cfc5f70f7e2a3b57acfdd8b24e6c6974",
+  "ime": "Denis",
+  "prezime": "Desire",
+  "pol": "Z",
+  "kontaktTelefon": "0667895643",
+  "email": "denisdesire@gmail.com",
+  "brojKreditneKartice": "300588999123145",
+  "tip": "dekorater",
+  "status": "odobren"
+},
+{
+  "_id": {
+    "$oid": "66da123b1b8f32c02a436692"
+  },
+  "korisnickoIme": "milanmiljevic",
+  "lozinka": "2c89fade0bc0e3745ca0f7f3e9627e648450503b2e00a143005ca907ae43178f",
+  "ime": "Milan",
+  "prezime": "Miljevic",
+  "pol": "M",
+  "kontaktTelefon": "0667895643",
+  "email": "milanmiljevic@gmail.com",
+  "brojKreditneKartice": "300588999123145",
+  "tip": "dekorater",
+  "status": "odobren"
+},
+{
+  "_id": {
+    "$oid": "66da12661b8f32c02a436697"
+  },
+  "korisnickoIme": "jovanmiletic",
+  "lozinka": "64666d0f9146507209e1fabb88e3c9629b2fb0f2a04bd1c46ffd9a21f59cda23",
+  "ime": "Jovan",
+  "prezime": "Miletic",
+  "pol": "M",
+  "kontaktTelefon": "0667895643",
+  "email": "jovanmiletic@gmail.com",
+  "brojKreditneKartice": "300588999123141",
+  "tip": "dekorater",
+  "status": "odobren",
+  "adresa": "Bulevar Kralja Aleksandra 32"
+},
+{
+  "_id": {
+    "$oid": "66da12911b8f32c02a43669c"
+  },
+  "korisnickoIme": "markonastic",
+  "lozinka": "ee333658976e2cb6ddda84e09e83d21eae90310f4354ebef199f4daac21cb321",
+  "ime": "Marko",
+  "prezime": "Nastic",
+  "pol": "M",
+  "kontaktTelefon": "0667895643",
+  "email": "markonastic@gmail.com",
+  "brojKreditneKartice": "300588999123140",
+  "tip": "dekorater",
+  "status": "odobren"
+},
+{
+  "_id": {
+    "$oid": "66da12d11b8f32c02a4366a1"
+  },
+  "korisnickoIme": "milosmilenkovic",
+  "lozinka": "9125a68d43f93aa986e84b6e54c0300c33661d10e98329626649cc5469e5a5ac",
+  "ime": "Milos",
+  "prezime": "Milenkovic",
+  "pol": "M",
+  "kontaktTelefon": "0667895643",
+  "email": "milosmilenkovic@gmail.com",
+  "brojKreditneKartice": "300588999123148",
+  "tip": "dekorater",
+  "status": "odobren"
+},
+{
+  "_id": {
+    "$oid": "66dce543b0b36a12ec934cbe"
+  },
+  "korisnickoIme": "josephvella",
+  "lozinka": "7b98760578f7a0f93c2c022f7784274317fdb6134f889d1a3c6991371bdc49ad",
+  "ime": "Joseph",
+  "prezime": "Vella",
+  "pol": "M",
+  "kontaktTelefon": "0667895643",
+  "email": "josephvella@gmail.com",
+  "brojKreditneKartice": "300588999123145",
+  "tip": "dekorater",
+  "status": "odobren"
+},
+{
+  "_id": {
+    "$oid": "66dce57fb0b36a12ec934cc3"
+  },
+  "korisnickoIme": "ildikodjordjevic",
+  "lozinka": "224615059dc224643ec32a2d3f5de834c5859abb32b7b8c3e3e6081f184cd322",
+  "ime": "Ildiko",
+  "prezime": "Djordjevic",
+  "pol": "Z",
+  "kontaktTelefon": "0667895642",
+  "email": "ildikodjordjevic@gmail.com",
+  "brojKreditneKartice": "300588999123141",
+  "tip": "dekorater",
+  "status": "odobren"
+},
+{
+  "_id": {
+    "$oid": "66dce5c1b0b36a12ec934cc8"
+  },
+  "korisnickoIme": "radovanmarkovic",
+  "lozinka": "7d133d02dcac2922c16d5d534a84eb7a2ab788b0ba80a302ded7f72b3a978d56",
+  "ime": "Radovan",
+  "prezime": "Markovic",
+  "pol": "M",
+  "kontaktTelefon": "0667892643",
+  "email": "radovanmarkovic@gmail.com",
+  "brojKreditneKartice": "300588999123147",
+  "tip": "dekorater",
+  "status": "odobren"
+},
+{
+  "_id": {
+    "$oid": "66dce608b0b36a12ec934ccd"
+  },
+  "korisnickoIme": "bogdandjordjevic",
+  "lozinka": "cc81be0425a980e929094d21f9caebacdd84f37c8bf1145108c0ec1a0551ab1d",
+  "ime": "Bogdan",
+  "prezime": "Djordjevic",
+  "pol": "M",
+  "kontaktTelefon": "0657895643",
+  "email": "bogdandjordjevic@gmail.com",
+  "brojKreditneKartice": "300588999123145",
+  "tip": "dekorater",
+  "status": "odobren"
+}]

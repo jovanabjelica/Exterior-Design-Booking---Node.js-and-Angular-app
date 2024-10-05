@@ -1,0 +1,47 @@
+<div class="container">
+    <app-admin-side-menu></app-admin-side-menu>
+    <div class="main-content">
+        <header>
+            <h1>Deaktivirani</h1>
+        </header>
+        <hr> 
+        <div class="table-container">
+            <div class="zero-state" *ngIf="deaktivirani.length == 0">
+                <table>
+                    <tr>
+                        <th>Ime</th>
+                        <th>Prezime</th>
+                        <th>Korisnicko ime</th>
+                        <th>Email adresa</th>
+                        <th>Kontakt telefon</th>
+                    </tr>
+                    <tr>
+                        <td colspan="6" class="no-data">Trenutno nema podataka za prikazivanje</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="non-zero-state" *ngIf="deaktivirani.length > 0">
+                <table>
+                    <tr>
+                        <th>Ime</th>
+                        <th>Prezime</th>
+                        <th>Korisnicko ime</th>
+                        <th>Email adresa</th>
+                        <th>Kontakt telefon</th>
+                        <th>Tip</th>
+                        <th></th>
+                    </tr>
+                    <tr *ngFor="let d of deaktivirani">
+                        <td> {{ d.ime }} </td>
+                        <td> {{ d.prezime }} </td>
+                        <td> {{ d.korisnickoIme }} </td>
+                        <td> {{ d.email }} </td>
+                        <td> {{ d.kontaktTelefon }} </td>
+                        <td> {{ d.tip }} </td>
+                        <td><button class="button" (click)="aktivirajKorisnika(d.korisnickoIme)">Aktiviraj</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

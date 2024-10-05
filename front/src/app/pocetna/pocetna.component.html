@@ -1,0 +1,110 @@
+<div class="container">
+  <!-- Main Section -->
+  <section class="main-section">
+      <div class="content">
+          <h1 class="main-title">Vasa masta<br>Vasa basta</h1>
+          <div class="buttons">
+              <button class="btn" id="login" (click)="prijava()">Prijava</button>
+              <button class="btn" id="register" (click)="registracija()">Registracija</button>
+          </div>
+      </div>
+  </section>
+
+  <!-- Company Info Section -->
+  <section class="info-section">
+      <h3 class="info-title">O nasoj kompaniji</h3>
+      <div class="stats">
+          <div>
+              <h4>Ukupan broj dekorisanih basta</h4>
+              <p>{{ ukupanBrojDekorisanihBasti }}</p>
+          </div>
+          <div>
+              <h4>Ukupan broj registrovanih vlasnika</h4>
+              <p>{{ ukupanBrojRegistrovanihVlasnika }}</p>
+          </div>
+          <div>
+              <h4>Ukupan broj registrovanih dekoratera</h4>
+              <p>{{ ukupanBrojRegistrovanihDekoratera }}</p>
+          </div>
+          <div>
+              <h4>Broj zakazanih poslova u poslednjih 24h</h4>
+              <p>{{ brojZakazanihPoslovaUPoslednjih24h }}</p>
+          </div>
+          <div>
+              <h4>Broj zakazanih poslova u poslednjih 7 dana</h4>
+              <p>{{ brojZakazanihPoslovaUPoslednjih7Dana }}</p>
+          </div>
+          <div>
+              <h4>Broj zakazanih poslova u poslednjih 30 dana</h4>
+              <p>{{ brojZakazanihPoslovaUPoslednjih30Dana }}</p>
+          </div>
+      </div>
+  </section>
+
+  <!-- Background Image Section -->
+  <section class="background-image-section">
+      <div class="overlay"></div> <!-- Optional: For text contrast if needed -->
+  </section>
+  <hr>
+  <h1>Firme partneri</h1>
+  <div class="table-container">
+
+    <div class="search-container">
+        <div class="search-input">
+            <input type="text" placeholder="Pretrazi po nazivu firme" [(ngModel)]="pretragaNaziv" (input)="onSearchChange($event)">
+        </div>
+        <div class="search-input">
+            <input type="text" placeholder="Pretrazi po adresi firme" [(ngModel)]="pretragaAdresa" (input)="onSearchChange($event)">
+        </div>
+    </div>
+  
+    <div class="zero-state" *ngIf="firme.length == 0">
+        <table>
+            <tr>
+                <th>Naziv</th>
+                <th>Adresa</th>
+                <th>Kontakt osoba</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td colspan="6" class="no-data">Trenutno nema podataka za prikazivanje</td>
+            </tr>
+        </table>
+    </div>
+    <div class="non-zero-state" *ngIf="firme.length > 0">
+        <table>
+            <tr>
+                <th (click)="sortirajFirmePoNazivu()">Naziv 
+                    <span *ngIf="!sortiranePoNazivuRastuce">&#9650;</span> 
+                    <span *ngIf="sortiranePoNazivuRastuce">&#9660;</span>
+                </th>
+                <th (click)="sortirajFirmePoAdresi()">Adresa 
+                    <span *ngIf="!sortiranePoAdresiRastuce">&#9650;</span> 
+                    <span *ngIf="sortiranePoAdresiRastuce">&#9660;</span>
+                </th>
+                <th>Kontakt osoba</th>
+                <th>Zaposleni</th>
+            </tr>
+            <tr *ngFor="let firma of firme">
+                <td> {{ firma.naziv }} </td>
+                <td> {{ firma.adresa }} </td>
+                <td><a [attr.href]="'mailto:' + firma.kontakt_osoba"> {{ firma.kontakt_osoba }} </a></td>
+                <td>
+                    <table>
+                        <tr *ngFor="let zaposleni of firma.zaposleni">
+                            <td>{{ zaposleni }}</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+  </div>
+    <!-- Footer Section -->
+  <footer class="site-footer">
+     <div class="container">
+            <p>&copy; 2024 Vasa Masta Vasa Basta. All rights reserved.</p>
+        </div>
+    </footer>
+</div>
+

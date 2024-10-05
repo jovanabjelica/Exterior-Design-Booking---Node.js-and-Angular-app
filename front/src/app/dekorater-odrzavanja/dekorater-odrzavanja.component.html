@@ -1,0 +1,43 @@
+<div class="container">
+    <app-dekorater-side-menu></app-dekorater-side-menu>
+    <div class="main-content">
+        <h1>
+            Odrzavanja vodenih povrsina
+        </h1>
+        <hr>
+        <div class="table-container">
+            <div class="zero-state" *ngIf="odrzavanja.length==0">
+                <table>
+                    <tr>
+                        <th>Korisnik</th>
+                        <th>Tip</th>
+                        <th>Kvadratura</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td colspan="5" class="no-data">Trenutno nema podataka za prikazivanje.</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="non-zero-state" *ngIf="odrzavanja.length>0">
+                <table>
+                    <tr>
+                        <th>Korisnik</th>
+                        <th>Tip</th>
+                        <th>Kvadratura</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr *ngFor="let zahtev of odrzavanja">
+                        <td>{{ zahtev.korisnik }}</td>
+                        <td>{{ zahtev.tip }}</td>
+                        <td>{{ zahtev.kvadratura }}</td>
+                        <td><button (click)="prihvatiOdrzavanje(zahtev)">Prihvati</button></td>
+                        <td><button (click)="odbijOdrzavanje(zahtev)">Odbij</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

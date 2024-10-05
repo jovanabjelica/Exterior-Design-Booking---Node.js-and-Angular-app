@@ -1,0 +1,193 @@
+<div class="container">
+    <app-vlasnik-side-menu></app-vlasnik-side-menu>
+    <div class="main-content">
+        <header>
+            <h1>Zakazivanja</h1>
+        </header>
+        <hr>
+        
+        <div id="idModal" class="modal" *ngIf="modalOtvoren">
+            <div class="modal-content">
+                <span class="close" (click)="zatvoriModal()">&times;</span>
+                <h2><span class="modal-tittle">Dodaj ocenu</span></h2>
+                <hr>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="komentar">Unesite komentar:</label>
+                            <input 
+                                type="text" 
+                                name="komentar" 
+                                id="komentar"
+                                placeholder="Komentar"
+                                [(ngModel)]="komentar"
+                            >
+                            <label for="komentar" class="greska">{{ greskaKomentar }}</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="ocena">Ocena:</label>
+                            <div class="stars">
+                                <span 
+                                    *ngFor="let zvezda of zvezdice; let index = index" 
+                                    [ngClass]="{'active': ocena && index < ocena}"
+                                    (click)="azurirajOcenu(index + 1)">
+                                    &#9733;
+                                </span>
+                            </div>
+                            <label for="ocena" class="greska">{{ greskaOcena }}</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <button (click)="dodavanjeRecenzije()">
+                                Dodaj komentar
+                            </button>
+                        </div>
+                        <div class="form-group">
+                            <button class="button-otkazi" (click)="zatvoriModal()">
+                                Otkazi
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <h2>Predstojeca uredjivanja</h2>
+        <div class="table-container">
+            <div class="zero-state" *ngIf="zakazaniZahtevi.length==0">
+                <table>
+                    <tr>
+                        <th>Naziv firme</th>
+                        <th>Datum zakazivanja</th>
+                        <th>Datum izrade</th>
+                        <th>Dekorater</th>
+                        <th>Usluge</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td colspan="6" class="no-data">Trenutno nema podataka za prikazivanje</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="non-zero-state" *ngIf="zakazaniZahtevi.length>0">
+                <table>
+                    <tr>
+                        <th>Naziv firme</th>
+                        <th>Datum zakazivanja</th>
+                        <th>Datum izrade</th>
+                        <th>Dekorater</th>
+                        <th>Usluge</th>
+                        <th></th>
+                    </tr>
+                    <tr *ngFor="let zahtev of zakazaniZahtevi">
+                        <td>{{ zahtev.firma }}</td>
+                        <td *ngIf="zahtev.datumKreiranja!=null">{{ zahtev.datumKreiranja.toString().split('T')[0] }}</td>
+                        <td *ngIf="zahtev.datum!=null">{{ zahtev.datum.toString().split('T')[0] }}</td>
+                        <td>{{ zahtev.dekorater }}</td>
+                        <td *ngIf="zahtev.tip=='Privatna'">
+                            <table>
+                                <tr>
+                                    <th>Povrsina</th>
+                                    <th>Kvadratura</th>
+                                </tr>
+                                <tr>
+                                    <td>Zelenilo</td>
+                                    <td>{{ zahtev.povrsinaZelenilo }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Bazen</td>
+                                    <td>{{ zahtev.povrsinaBazen }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Lezaljke</td>
+                                    <td>{{ zahtev.povrsinaLezaljke }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Stolovi</td>
+                                    <td>{{ zahtev.povrsinaStolovi }}</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td *ngIf="zahtev.tip=='Restoran'">
+                            <table>
+                                <tr>
+                                    <th>Povrsina</th>
+                                    <th>Kvadratura</th>
+                                </tr>
+                                <tr>
+                                    <td>Zelenilo</td>
+                                    <td>{{ zahtev.povrsinaZelenilo }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Fontana</td>
+                                    <td>{{ zahtev.povrsinaFontana }}</td>
+                                </tr>
+                                <tr>
+                                    <th>Predmet</th>
+                                    <th>Broj</th>
+                                </tr>
+                                <tr>
+                                    <td>Stolice</td>
+                                    <td>{{ zahtev.brojStolica }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Stolovi</td>
+                                    <td>{{ zahtev.brojStolova }}</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td *ngIf="zahtev.datum!=null && zahtev.datum.toString().split('T')[0] > danas()">
+                            <button (click)="otkazivanjeZahteva(zahtev)">Otkazi</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <hr>
+        <h2>Arhiva</h2>
+        <div class="table-container">
+            <div class="zero-state" *ngIf="arhiviraniZahtevi.length==0">
+                <table>
+                    <tr>
+                        <th>Naziv firme</th>
+                        <th>Datum izrade</th>
+                        <th>Komentar</th>
+                        <th>Ocena</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td colspan="6" class="no-data">Trenutno nema podataka za prikazivanje</td>
+                    </tr>
+                </table>                
+            </div>
+            <div class="non-zero-state" *ngIf="arhiviraniZahtevi.length>0">
+                <table>
+                    <tr>
+                        <th>Naziv firme</th>
+                        <th>Datum izrade</th>
+                        <th>Komentar</th>
+                        <th>Ocena</th>
+                        <th></th>
+                    </tr>
+                    <tr *ngFor="let zahtev of arhiviraniZahtevi">
+                        <td>{{ zahtev.firma }}</td>
+                        <td *ngIf="zahtev.datum!=null">{{ zahtev.datum.toString().split('T')[0] }}</td>
+                        <td *ngIf="zahtev.recenzijaDodata">{{ zahtev.komentar }}</td>
+                        <td *ngIf="!zahtev.recenzijaDodata">
+                            <input type="text" disabled value="Komentar nije dodat">
+                        </td>
+                        <td *ngIf="zahtev.recenzijaDodata">{{ zahtev.ocena }}</td>
+                        <td *ngIf="!zahtev.recenzijaDodata">
+                            <input type="text" disabled value="Ocena nije dodata">
+                        </td>
+                        <td *ngIf="zahtev.zavrsniDatum!=null && !zahtev.recenzijaDodata"><button (click)="otvoriModal(zahtev)">Dodaj recenziju</button></td>
+                        <td *ngIf="zahtev.zavrsniDatum==null || zahtev.recenzijaDodata"><button class="disabled" disabled>Dodaj recenziju</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <hr>
+    </div>
+</div>

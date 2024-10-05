@@ -1,0 +1,165 @@
+<div class="container">
+    <app-admin-side-menu></app-admin-side-menu>
+    <div class="main-content">
+        <header>
+            <h1>Dekorateri</h1>
+            <div class="links">
+                <button (click)="otvoriModal()">⊹ Dodaj dekoratera</button>
+            </div>
+        </header>
+        <div id="myModal" class="modal" *ngIf="daLiJeModalOtvoren">
+            <div class="modal-content">
+                <span class="close" (click)="zatvoriModal()">&times;</span>
+                <div class="modal-container">
+                    <h2>➕ <span class="modal-tittle">Dodaj Dekoratera</span></h2>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="korisnickoIme">Unesite korisnicko ime:</label>
+                                <input 
+                                    type="text" 
+                                    name="korisnickoIme" 
+                                    id="korisnickoIme" [(ngModel)]="korisnickoIme" 
+                                    placeholder="Korisnicko ime"
+                                >
+                                <label for="korisnickoIme" class="greska">{{ greskaKorisnickoIme }}</label>
+                            </div>
+                            <div class="form-group">
+                                <label for="lozinka">Unesite lozinku:</label>
+                                <input 
+                                    type="password" 
+                                    name="lozinka" 
+                                    id="lozinka" 
+                                    [(ngModel)]="lozinka" 
+                                    placeholder="Lozinka"
+                                >
+                                <label for="lozinka" class="greska">{{ greskaLozinka }}</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="ime">Unesite ime:</label>
+                                <input 
+                                    type="text" 
+                                    name="ime" 
+                                    id="ime" 
+                                    [(ngModel)]="ime" 
+                                    placeholder="Ime"
+                                >
+                                <label for="ime" class="greska">{{ greskaIme }}</label>
+                            </div>
+                            <div class="form-group">
+                                <label for="prezime">Unesite prezime:</label>
+                                <input 
+                                    type="text" 
+                                    name="prezime" 
+                                    id="prezime" 
+                                    [(ngModel)]="prezime" 
+                                    placeholder="Prezime"
+                                >
+                                <label for="prezime" class="greska">{{ greskaPrezime }}</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="kreditnaKartica">Unesite broj kreditne kartice:</label>
+                                <div class="input-with-icon">
+                                    <input 
+                                        type="text" 
+                                        name="kreditnaKartica" 
+                                        id="kreditnaKartica" 
+                                        [(ngModel)]="kreditnaKartica" 
+                                        placeholder="Kreditna kartica"
+                                        (ngModelChange)="proveraFormataKreditneKartice()" 
+                                    >
+                                    <img *ngIf="visa" src="../../assets/static/visa.png" alt="Visa" class="card-icon">
+                                    <img *ngIf="master" src="../../assets/static/mastercard.png" alt="MasterCard" class="card-icon">
+                                    <img *ngIf="diners" src="../../assets/static/dinacard.png" alt="Diners Club" class="card-icon">
+                                </div>
+                                
+                                <label for="kreditnaKartica" class="greska">{{ greskaKreditnaKartica }}</label>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefon">Unesite broj telefona:</label>
+                                <input 
+                                    type="text" 
+                                    name="telefon" 
+                                    id="telefon"
+                                    [(ngModel)]="telefon"
+                                    placeholder="Telefon"
+                                >
+                                <label for="telefon" class="greska">{{ greskaTelefon }}</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Unesite email:</label>
+                                <input 
+                                    type="text" 
+                                    name="email" 
+                                    id="email"
+                                    [(ngModel)]="email"
+                                    placeholder="Email"
+                                >
+                                <label for="email" class="greska">{{ greskaEmail }}</label>
+                            </div>
+                            <div class="form-group">
+                                <label for="pol">Izaberite pol:</label>
+                                <div>Muski <input type="radio" name="pol" id="M" value="M" [(ngModel)]="pol"></div>
+                                <div>Zenski <input type="radio" name="pol" id="Z" value="Z" [(ngModel)]="pol"></div>
+                                <label for="pol" class="greska">{{ greskaPol }}</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <button class="button-dodaj" (click)="dodavanjeDekoratera()">Dodaj Dekoratera</button>
+                            </div>
+                            <div class="form-group">
+                                <button class="button-otkazi" (click)="zatvoriModal()">Otkazi</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr> 
+        <h2>Registrovani</h2>
+        <div class="table-container">
+            <div class="zero-state" *ngIf="dekorateri.length == 0">
+                <table>
+                    <tr>
+                        <th>Ime</th>
+                        <th>Prezime</th>
+                        <th>Korisnicko ime</th>
+                        <th>Email adresa</th>
+                        <th>Kontakt telefon</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td colspan="6" class="no-data">Trenutno nema podataka za prikazivanje</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="non-zero-state" *ngIf="dekorateri.length > 0">
+                <table>
+                    <tr>
+                        <th>Ime</th>
+                        <th>Prezime</th>
+                        <th>Korisnicko ime</th>
+                        <th>Email adresa</th>
+                        <th>Kontakt telefon</th>
+                        <th></th>
+                    </tr>
+                    <tr *ngFor="let dekorater of dekorateri">
+                        <td> {{ dekorater.ime }} </td>
+                        <td> {{ dekorater.prezime }} </td>
+                        <td> {{ dekorater.korisnickoIme }} </td>
+                        <td> {{ dekorater.email }} </td>
+                        <td> {{ dekorater.kontaktTelefon }} </td>
+                        <td> <button class="button" (click)="deaktivirajKorisnika(dekorater.korisnickoIme)">Deaktiviraj</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

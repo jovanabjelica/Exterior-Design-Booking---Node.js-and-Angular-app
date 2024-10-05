@@ -1,0 +1,272 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; 
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f8f2f2; 
+}
+
+.main-content h1 {
+    font-size: 36px; 
+    margin: 0;
+    color: #333; 
+}
+
+.main-content header {
+    margin-bottom: 20px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    max-height: 220px;
+    overflow-y: auto;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #111111; 
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    border: 1px solid #ddd;
+    font-size: 18px; 
+}
+
+th, td {
+    padding: 15px; 
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+}
+
+th {
+    background-color: #ebe9e9;
+    font-weight: bold; 
+}
+
+tr:hover {
+    background-color: #cac8c8;
+}
+
+.zero-state .no-data {
+    text-align: center;
+    color: #888;
+}
+
+button {
+    padding: 7px 7px; 
+    border: 1px solid #ccc; 
+    font-size: 15px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    background-color: #333;
+    margin-top: 10px;
+}
+
+.disabled {
+    border-radius: 4px; 
+    cursor: pointer; 
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    background-color: #8f8484;
+    margin-top: 10px;
+}
+
+.modal-tittle {
+    font-size: 30px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.modal-canvas-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+.stars {
+    display: inline-block;
+}
+
+.stars span {
+    font-size: 24px;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.stars span.active {
+    color: #f39c12;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.modal-container form {
+    width: 100%;
+}
+
+.button-dodaj,
+.button-otkazi {
+    width: 78%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button-dodaj {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}
+
+.button-otkazi {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.greska {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}

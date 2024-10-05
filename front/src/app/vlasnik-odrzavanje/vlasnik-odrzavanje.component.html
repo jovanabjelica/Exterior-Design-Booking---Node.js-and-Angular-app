@@ -1,0 +1,81 @@
+<div class="container">
+    <app-vlasnik-side-menu></app-vlasnik-side-menu>
+    <div class="main-content">
+        <header>
+            <h1>Odrzavanja</h1>
+        </header>
+        <hr>
+        <h2>Zavrseni radovi</h2>
+        <div class="table-container">
+            <div class="zero-state" *ngIf="zavrseniZahtevi.length == 0">
+                <table>
+                    <tr>
+                        <th>Firma</th>
+                        <th>Dekorater</th>
+                        <th>Broj bazena/fontana</th>
+                        <th>Datum zavrsetka</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td colspan="5" class="no-data">Trenutno nema podataka za prikazivanje</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="non-zero-state" *ngIf="zavrseniZahtevi.length > 0">
+                <table>
+                    <tr>
+                        <th>Firma</th>
+                        <th>Dekorater</th>
+                        <th>Broj bazena/fontana</th>
+                        <th>Datum zavrsetka</th>
+                        <th></th>
+                    </tr>
+                    <tr *ngFor="let z of zavrseniZahtevi">
+                        <td>{{ z.firma }}</td>
+                        <td>{{ z.dekorater }}</td>
+                        <td *ngIf="z.tip=='Privatna'">{{ z.povrsinaBazen }}</td>
+                        <td *ngIf="z.tip=='Restoran'">{{ z.povrsinaFontana }}</td>
+                        <td *ngIf="z.zavrsniDatum">{{ z.zavrsniDatum.toString().split('T')[0] }}</td>
+                        <td *ngIf="z.zavrsniDatum && proslo6Meseci(z.zavrsniDatum)">
+                            <button (click)="zakaziOdrzavanje(z)">Zakazi odrzavanje</button>
+                        </td>
+                        <td *ngIf="!z.zavrsniDatum || (z.zavrsniDatum && !proslo6Meseci(z.zavrsniDatum))">
+                            <button class="disabled" disabled>Zakazi odrzavanje</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <hr>
+        <h2>Odrzavanja</h2>
+        <div class="table-container">
+            <div class="zero-state" *ngIf="odrzavanje.length == 0">
+                <table>
+                    <tr>
+                        <th>Firma</th>
+                        <th>Dekorater</th>
+                        <th>Broj bazena/fontana</th>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="no-data">Trenutno nema podataka za prikazivanje</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="non-zero-state" *ngIf="odrzavanje.length > 0">
+                <table>
+                    <tr>
+                        <th>Firma</th>
+                        <th>Dekorater</th>
+                        <th>Broj bazena/fontana</th>
+                    </tr>
+                    <tr *ngFor="let z of odrzavanje">
+                        <td>{{ z.firma }}</td>
+                        <td>{{ z.dekorater }}</td>
+                        <td *ngIf="z.tip=='Privatna'">{{ z.povrsinaBazen }}</td>
+                        <td *ngIf="z.tip=='Restoran'">{{ z.povrsinaFontana }}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

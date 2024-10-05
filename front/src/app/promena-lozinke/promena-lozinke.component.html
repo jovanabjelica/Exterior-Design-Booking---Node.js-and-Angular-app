@@ -1,0 +1,59 @@
+<body>
+    <div class="container">
+        <h1>Promena lozinke</h1>
+        <form>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="korisnickoIme">Unesite korisnicko ime:</label>
+                    <input 
+                        type="text" 
+                        id="korisnickoIme" 
+                        name="korisnickoIme" 
+                        placeholder="Korisnicko ime" 
+                        [(ngModel)]="korisnickoIme"
+                    >
+                    <label for="korisnickoIme" class="greska">{{ greskaKorisnickoIme }}</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="staraLozinka">Unesite staru lozinku:</label>
+                    <input 
+                        type="password" 
+                        name="staraLozinka" id="staraLozinka" 
+                        placeholder="Stara lozinka" 
+                        [(ngModel)]="staraLozinka"
+                    >
+                    <label for="novaLozinka" class="greska">{{ greskaStaraLozinka }}</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="novaLozinka">Unesite novu lozinku:</label>
+                    <input 
+                        type="password" 
+                        name="novaLozinka" 
+                        id="novaLozinka" 
+                        placeholder="Nova lozinka" 
+                        [(ngModel)]="novaLozinka"
+                    >
+                    <label for="novaLozinka" class="greska">{{ greskaNovaLozinka }}</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <div *ngIf="greskaNepostojeciKorisnik!=''" class="greska">{{ greskaNepostojeciKorisnik }}</div>
+                    <button class="button" (click)="promenaLozinke()">Cuvanje promena</button>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <p class="linkovi">
+                        Nemate nalog? Registrujte se <a routerLink="/registracija">ovde</a>. 
+                    </p>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+

@@ -1,0 +1,49 @@
+<body>
+    <div class="container">
+        <h1>Prijava</h1>
+        <form>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="korisnickoIme">Unesite korisnicko ime:</label>
+                    <input 
+                        type="text" 
+                        id="korisnickoIme" 
+                        name="korisnickoIme" 
+                        placeholder="Korisnicko ime" 
+                        [(ngModel)]="korisnickoIme"
+                    >
+                    <label for="korisnickoIme" class="greska">{{ greskaKorisnickoIme }}</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="lozinka">Unesite lozinku:</label>
+                    <input 
+                        type="password" 
+                        name="lozinka" 
+                        id="lozinka" 
+                        placeholder="Lozinka" 
+                        [(ngModel)]="lozinka"
+                    >
+                    <label for="lozinka" class="greska">{{ greskaLozinka }}</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <div *ngIf="greskaNepostojeciKorisnik!=''" class="greska">{{ greskaNepostojeciKorisnik }}</div>
+                    <button class="button" (click)="prijava()">Prijava</button>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <p class="linkovi">
+                        Nemate nalog? Registrujte se <a routerLink="/registracija">ovde</a>. 
+                        <br>
+                        Zelite da promenite lozinku? Kliknite <a routerLink="/promena-lozinke">ovde</a>.
+                    </p>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+

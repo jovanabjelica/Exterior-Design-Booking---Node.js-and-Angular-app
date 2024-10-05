@@ -1,0 +1,1312 @@
+[{
+  "_id": {
+    "$oid": "66dce936b0b36a12ec934cf6"
+  },
+  "figure": [
+    {
+      "x": 75,
+      "y": 75,
+      "tip": "bazen",
+      "_id": {
+        "$oid": "66dce936b0b36a12ec934cf7"
+      }
+    },
+    {
+      "x": 160,
+      "y": 120,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dce936b0b36a12ec934cf8"
+      }
+    },
+    {
+      "x": 250,
+      "y": 200,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dce936b0b36a12ec934cf9"
+      }
+    },
+    {
+      "x": 320,
+      "y": 270,
+      "tip": "zelenilo",
+      "_id": {
+        "$oid": "66dce936b0b36a12ec934cfa"
+      }
+    },
+    {
+      "x": 400,
+      "y": 350,
+      "tip": "fontana",
+      "_id": {
+        "$oid": "66dce936b0b36a12ec934cfb"
+      }
+    },
+    {
+      "x": 450,
+      "y": 400,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dce936b0b36a12ec934cfc"
+      }
+    },
+    {
+      "x": 500,
+      "y": 450,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dce936b0b36a12ec934cfd"
+      }
+    }
+  ],
+  "kvadratura": 70,
+  "datum": {
+    "$date": "2024-03-12T00:00:00.000Z"
+  },
+  "vreme": "12:00",
+  "tip": "Privatna",
+  "povrsinaZelenilo": 70,
+  "dodatniZahtevi": "",
+  "dekorater": "milosmilenkovic@gmail.com",
+  "korisnik": "jovanabjelica",
+  "status": "odobren",
+  "firma": "CCBill",
+  "datumKreiranja": {
+    "$date": "2024-09-08T00:00:54.874Z"
+  },
+  "povrsinaBazen": 30,
+  "povrsinaLezaljke": 10,
+  "povrsinaStolovi": 30,
+  "zavrsniDatum": {
+    "$date": "2024-09-08T00:20:42.470Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66dce9fcb0b36a12ec934d10"
+  },
+  "figure": [
+    {
+      "x": 75,
+      "y": 75,
+      "tip": "bazen",
+      "_id": {
+        "$oid": "66dce9fcb0b36a12ec934d11"
+      }
+    },
+    {
+      "x": 160,
+      "y": 120,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dce9fcb0b36a12ec934d12"
+      }
+    },
+    {
+      "x": 250,
+      "y": 200,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dce9fcb0b36a12ec934d13"
+      }
+    },
+    {
+      "x": 320,
+      "y": 270,
+      "tip": "zelenilo",
+      "_id": {
+        "$oid": "66dce9fcb0b36a12ec934d14"
+      }
+    },
+    {
+      "x": 400,
+      "y": 350,
+      "tip": "fontana",
+      "_id": {
+        "$oid": "66dce9fcb0b36a12ec934d15"
+      }
+    },
+    {
+      "x": 450,
+      "y": 400,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dce9fcb0b36a12ec934d16"
+      }
+    },
+    {
+      "x": 500,
+      "y": 450,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dce9fcb0b36a12ec934d17"
+      }
+    }
+  ],
+  "kvadratura": 100,
+  "datum": {
+    "$date": "2024-03-13T00:00:00.000Z"
+  },
+  "vreme": "13:00",
+  "tip": "Restoran",
+  "povrsinaZelenilo": 100,
+  "dodatniZahtevi": "",
+  "dekorater": "milosmilenkovic@gmail.com",
+  "korisnik": "jovanabjelica",
+  "status": "odobren",
+  "firma": "CCBill",
+  "datumKreiranja": {
+    "$date": "2024-09-08T00:04:12.817Z"
+  },
+  "povrsinaFontana": 15,
+  "brojStolica": 5,
+  "brojStolova": 15,
+  "zavrsniDatum": {
+    "$date": "2024-09-08T00:20:45.053Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66dceaa0b0b36a12ec934d5f"
+  },
+  "figure": [
+    {
+      "x": 75,
+      "y": 75,
+      "tip": "bazen",
+      "_id": {
+        "$oid": "66dceaa0b0b36a12ec934d60"
+      }
+    },
+    {
+      "x": 160,
+      "y": 120,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dceaa0b0b36a12ec934d61"
+      }
+    },
+    {
+      "x": 250,
+      "y": 200,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dceaa0b0b36a12ec934d62"
+      }
+    },
+    {
+      "x": 320,
+      "y": 270,
+      "tip": "zelenilo",
+      "_id": {
+        "$oid": "66dceaa0b0b36a12ec934d63"
+      }
+    },
+    {
+      "x": 400,
+      "y": 350,
+      "tip": "fontana",
+      "_id": {
+        "$oid": "66dceaa0b0b36a12ec934d64"
+      }
+    },
+    {
+      "x": 450,
+      "y": 400,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dceaa0b0b36a12ec934d65"
+      }
+    },
+    {
+      "x": 500,
+      "y": 450,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dceaa0b0b36a12ec934d66"
+      }
+    }
+  ],
+  "kvadratura": 85,
+  "datum": {
+    "$date": "2024-02-12T00:00:00.000Z"
+  },
+  "vreme": "14:00",
+  "tip": "Privatna",
+  "povrsinaZelenilo": 85,
+  "dodatniZahtevi": "",
+  "dekorater": "olgabozovic@gmail.com",
+  "korisnik": "marijakovacevic",
+  "status": "odrzavanje",
+  "firma": "Graficki Paradoks",
+  "datumKreiranja": {
+    "$date": "2024-09-08T00:06:56.162Z"
+  },
+  "povrsinaBazen": 20,
+  "povrsinaLezaljke": 10,
+  "povrsinaStolovi": 20,
+  "zavrsniDatum": {
+    "$date": "2024-03-08T00:16:11.933Z"
+  },
+  "komentar": "Odlican posao! ",
+  "ocena": 4,
+  "recenzijaDodata": true
+},
+{
+  "_id": {
+    "$oid": "66dceaf0b0b36a12ec934d7e"
+  },
+  "figure": [
+    {
+      "x": 75,
+      "y": 75,
+      "tip": "bazen",
+      "_id": {
+        "$oid": "66dceaf0b0b36a12ec934d7f"
+      }
+    },
+    {
+      "x": 160,
+      "y": 120,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dceaf0b0b36a12ec934d80"
+      }
+    },
+    {
+      "x": 250,
+      "y": 200,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dceaf0b0b36a12ec934d81"
+      }
+    },
+    {
+      "x": 320,
+      "y": 270,
+      "tip": "zelenilo",
+      "_id": {
+        "$oid": "66dceaf0b0b36a12ec934d82"
+      }
+    },
+    {
+      "x": 400,
+      "y": 350,
+      "tip": "fontana",
+      "_id": {
+        "$oid": "66dceaf0b0b36a12ec934d83"
+      }
+    },
+    {
+      "x": 450,
+      "y": 400,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dceaf0b0b36a12ec934d84"
+      }
+    },
+    {
+      "x": 500,
+      "y": 450,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dceaf0b0b36a12ec934d85"
+      }
+    }
+  ],
+  "kvadratura": 200,
+  "datum": {
+    "$date": "2024-03-13T00:00:00.000Z"
+  },
+  "vreme": "14:00",
+  "tip": "Restoran",
+  "povrsinaZelenilo": 200,
+  "dodatniZahtevi": "",
+  "dekorater": "olgabozovic@gmail.com",
+  "korisnik": "marijakovacevic",
+  "status": "odobren",
+  "firma": "Graficki Paradoks",
+  "datumKreiranja": {
+    "$date": "2024-09-08T00:08:16.679Z"
+  },
+  "povrsinaFontana": 25,
+  "brojStolica": 5,
+  "brojStolova": 40,
+  "zavrsniDatum": {
+    "$date": "2024-09-08T00:16:32.136Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66dceb66b0b36a12ec934dc8"
+  },
+  "figure": [
+    {
+      "x": 75,
+      "y": 75,
+      "tip": "bazen",
+      "_id": {
+        "$oid": "66dceb66b0b36a12ec934dc9"
+      }
+    },
+    {
+      "x": 160,
+      "y": 120,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dceb66b0b36a12ec934dca"
+      }
+    },
+    {
+      "x": 250,
+      "y": 200,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dceb66b0b36a12ec934dcb"
+      }
+    },
+    {
+      "x": 320,
+      "y": 270,
+      "tip": "zelenilo",
+      "_id": {
+        "$oid": "66dceb66b0b36a12ec934dcc"
+      }
+    },
+    {
+      "x": 400,
+      "y": 350,
+      "tip": "fontana",
+      "_id": {
+        "$oid": "66dceb66b0b36a12ec934dcd"
+      }
+    },
+    {
+      "x": 450,
+      "y": 400,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dceb66b0b36a12ec934dce"
+      }
+    },
+    {
+      "x": 500,
+      "y": 450,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dceb66b0b36a12ec934dcf"
+      }
+    }
+  ],
+  "kvadratura": 80,
+  "datum": {
+    "$date": "2024-03-12T00:00:00.000Z"
+  },
+  "vreme": "15:00",
+  "tip": "Privatna",
+  "povrsinaZelenilo": 90,
+  "dodatniZahtevi": "",
+  "dekorater": "stefanastefanovic@gmail.com",
+  "korisnik": "pericabjelica",
+  "status": "na cekanju",
+  "firma": "Graficki Paradoks",
+  "datumKreiranja": {
+    "$date": "2024-09-08T00:10:14.823Z"
+  },
+  "povrsinaBazen": 20,
+  "povrsinaLezaljke": 20,
+  "povrsinaStolovi": 20
+},
+{
+  "_id": {
+    "$oid": "66dcebb0b0b36a12ec934df5"
+  },
+  "figure": [
+    {
+      "x": 75,
+      "y": 75,
+      "tip": "bazen",
+      "_id": {
+        "$oid": "66dcebb0b0b36a12ec934df6"
+      }
+    },
+    {
+      "x": 160,
+      "y": 120,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dcebb0b0b36a12ec934df7"
+      }
+    },
+    {
+      "x": 250,
+      "y": 200,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dcebb0b0b36a12ec934df8"
+      }
+    },
+    {
+      "x": 320,
+      "y": 270,
+      "tip": "zelenilo",
+      "_id": {
+        "$oid": "66dcebb0b0b36a12ec934df9"
+      }
+    },
+    {
+      "x": 400,
+      "y": 350,
+      "tip": "fontana",
+      "_id": {
+        "$oid": "66dcebb0b0b36a12ec934dfa"
+      }
+    },
+    {
+      "x": 450,
+      "y": 400,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dcebb0b0b36a12ec934dfb"
+      }
+    },
+    {
+      "x": 500,
+      "y": 450,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dcebb0b0b36a12ec934dfc"
+      }
+    }
+  ],
+  "kvadratura": 200,
+  "datum": {
+    "$date": "2024-03-12T00:00:00.000Z"
+  },
+  "vreme": "15:00",
+  "tip": "Restoran",
+  "povrsinaZelenilo": 100,
+  "dodatniZahtevi": "",
+  "dekorater": "miljanavasic@gmail.com",
+  "korisnik": "pericabjelica",
+  "status": "na cekanju",
+  "firma": "Graficki Paradoks",
+  "datumKreiranja": {
+    "$date": "2024-09-08T00:11:28.111Z"
+  },
+  "povrsinaFontana": 40,
+  "brojStolica": 3,
+  "brojStolova": 70
+},
+{
+  "_id": {
+    "$oid": "66dd158ca0d13e6aa233efd8"
+  },
+  "figure": [
+    {
+      "x": 75,
+      "y": 75,
+      "tip": "bazen",
+      "_id": {
+        "$oid": "66dd158ca0d13e6aa233efd9"
+      }
+    },
+    {
+      "x": 160,
+      "y": 120,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dd158ca0d13e6aa233efda"
+      }
+    },
+    {
+      "x": 250,
+      "y": 200,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dd158ca0d13e6aa233efdb"
+      }
+    },
+    {
+      "x": 320,
+      "y": 270,
+      "tip": "zelenilo",
+      "_id": {
+        "$oid": "66dd158ca0d13e6aa233efdc"
+      }
+    },
+    {
+      "x": 400,
+      "y": 350,
+      "tip": "fontana",
+      "_id": {
+        "$oid": "66dd158ca0d13e6aa233efdd"
+      }
+    },
+    {
+      "x": 450,
+      "y": 400,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dd158ca0d13e6aa233efde"
+      }
+    },
+    {
+      "x": 500,
+      "y": 450,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dd158ca0d13e6aa233efdf"
+      }
+    }
+  ],
+  "kvadratura": 50,
+  "datum": {
+    "$date": "2023-10-12T00:00:00.000Z"
+  },
+  "vreme": "12:00",
+  "tip": "Privatna",
+  "povrsinaZelenilo": 50,
+  "dodatniZahtevi": "",
+  "dekorater": "olgabozovic@gmail.com",
+  "korisnik": "marijakovacevic",
+  "status": "odrzavanje",
+  "firma": "Graficki Paradoks",
+  "datumKreiranja": {
+    "$date": "2024-09-08T03:10:04.136Z"
+  },
+  "povrsinaBazen": 10,
+  "povrsinaLezaljke": 20,
+  "povrsinaStolovi": 20,
+  "zavrsniDatum": null
+},
+{
+  "_id": {
+    "$oid": "66dd8dc2cf919d56a30fbc79"
+  },
+  "figure": [
+    {
+      "x": 75,
+      "y": 75,
+      "tip": "bazen",
+      "_id": {
+        "$oid": "66dd8dc2cf919d56a30fbc7a"
+      }
+    },
+    {
+      "x": 160,
+      "y": 120,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dd8dc3cf919d56a30fbc7b"
+      }
+    },
+    {
+      "x": 250,
+      "y": 200,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dd8dc3cf919d56a30fbc7c"
+      }
+    },
+    {
+      "x": 320,
+      "y": 270,
+      "tip": "zelenilo",
+      "_id": {
+        "$oid": "66dd8dc3cf919d56a30fbc7d"
+      }
+    },
+    {
+      "x": 400,
+      "y": 350,
+      "tip": "fontana",
+      "_id": {
+        "$oid": "66dd8dc3cf919d56a30fbc7e"
+      }
+    },
+    {
+      "x": 450,
+      "y": 400,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dd8dc3cf919d56a30fbc7f"
+      }
+    },
+    {
+      "x": 500,
+      "y": 450,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dd8dc3cf919d56a30fbc80"
+      }
+    }
+  ],
+  "kvadratura": 150,
+  "datum": {
+    "$date": "2024-10-12T00:00:00.000Z"
+  },
+  "vreme": "12:00",
+  "tip": "Restoran",
+  "povrsinaZelenilo": 150,
+  "dodatniZahtevi": "",
+  "dekorater": "olgabozovic@gmail.com",
+  "korisnik": "marijakovacevic",
+  "status": "odobren",
+  "firma": "Graficki Paradoks",
+  "datumKreiranja": {
+    "$date": "2024-09-08T11:42:58.896Z"
+  },
+  "povrsinaFontana": 5,
+  "brojStolica": 5,
+  "brojStolova": 20
+},
+{
+  "_id": {
+    "$oid": "66dd8e71cf919d56a30fbe1c"
+  },
+  "figure": [
+    {
+      "x": 75,
+      "y": 75,
+      "tip": "bazen",
+      "_id": {
+        "$oid": "66dd8e71cf919d56a30fbe1d"
+      }
+    },
+    {
+      "x": 160,
+      "y": 120,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dd8e71cf919d56a30fbe1e"
+      }
+    },
+    {
+      "x": 250,
+      "y": 200,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dd8e71cf919d56a30fbe1f"
+      }
+    },
+    {
+      "x": 320,
+      "y": 270,
+      "tip": "zelenilo",
+      "_id": {
+        "$oid": "66dd8e71cf919d56a30fbe20"
+      }
+    },
+    {
+      "x": 400,
+      "y": 350,
+      "tip": "fontana",
+      "_id": {
+        "$oid": "66dd8e71cf919d56a30fbe21"
+      }
+    },
+    {
+      "x": 450,
+      "y": 400,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dd8e71cf919d56a30fbe22"
+      }
+    },
+    {
+      "x": 500,
+      "y": 450,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dd8e71cf919d56a30fbe23"
+      }
+    }
+  ],
+  "kvadratura": 45,
+  "datum": {
+    "$date": "2024-10-12T00:00:00.000Z"
+  },
+  "vreme": "12:00",
+  "tip": "Privatna",
+  "povrsinaZelenilo": 45,
+  "dodatniZahtevi": "",
+  "dekorater": "stefanastefanovic@gmail.com",
+  "korisnik": "jovanabjelica",
+  "status": "na cekanju",
+  "firma": "Graficki Paradoks",
+  "datumKreiranja": {
+    "$date": "2024-09-08T11:45:53.199Z"
+  },
+  "povrsinaBazen": 0,
+  "povrsinaLezaljke": 10,
+  "povrsinaStolovi": 10
+},
+{
+  "_id": {
+    "$oid": "66dd8eb1cf919d56a30fbea5"
+  },
+  "figure": [
+    {
+      "x": 75,
+      "y": 75,
+      "tip": "bazen",
+      "_id": {
+        "$oid": "66dd8eb1cf919d56a30fbea6"
+      }
+    },
+    {
+      "x": 160,
+      "y": 120,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dd8eb1cf919d56a30fbea7"
+      }
+    },
+    {
+      "x": 250,
+      "y": 200,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dd8eb1cf919d56a30fbea8"
+      }
+    },
+    {
+      "x": 320,
+      "y": 270,
+      "tip": "zelenilo",
+      "_id": {
+        "$oid": "66dd8eb1cf919d56a30fbea9"
+      }
+    },
+    {
+      "x": 400,
+      "y": 350,
+      "tip": "fontana",
+      "_id": {
+        "$oid": "66dd8eb1cf919d56a30fbeaa"
+      }
+    },
+    {
+      "x": 450,
+      "y": 400,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dd8eb1cf919d56a30fbeab"
+      }
+    },
+    {
+      "x": 500,
+      "y": 450,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dd8eb1cf919d56a30fbeac"
+      }
+    }
+  ],
+  "kvadratura": 30,
+  "datum": {
+    "$date": "2024-10-12T00:00:00.000Z"
+  },
+  "vreme": "14:00",
+  "tip": "Privatna",
+  "povrsinaZelenilo": 30,
+  "dodatniZahtevi": "",
+  "dekorater": "stefanastefanovic@gmail.com",
+  "korisnik": "marijakovacevic",
+  "status": "na cekanju",
+  "firma": "Graficki Paradoks",
+  "datumKreiranja": {
+    "$date": "2024-09-08T11:46:57.183Z"
+  },
+  "povrsinaBazen": 5,
+  "povrsinaLezaljke": 5,
+  "povrsinaStolovi": 5
+},
+{
+  "_id": {
+    "$oid": "66dd8ef2cf919d56a30fbef5"
+  },
+  "figure": [
+    {
+      "x": 75,
+      "y": 75,
+      "tip": "bazen",
+      "_id": {
+        "$oid": "66dd8ef2cf919d56a30fbef6"
+      }
+    },
+    {
+      "x": 160,
+      "y": 120,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dd8ef2cf919d56a30fbef7"
+      }
+    },
+    {
+      "x": 250,
+      "y": 200,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dd8ef2cf919d56a30fbef8"
+      }
+    },
+    {
+      "x": 320,
+      "y": 270,
+      "tip": "zelenilo",
+      "_id": {
+        "$oid": "66dd8ef2cf919d56a30fbef9"
+      }
+    },
+    {
+      "x": 400,
+      "y": 350,
+      "tip": "fontana",
+      "_id": {
+        "$oid": "66dd8ef2cf919d56a30fbefa"
+      }
+    },
+    {
+      "x": 450,
+      "y": 400,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dd8ef2cf919d56a30fbefb"
+      }
+    },
+    {
+      "x": 500,
+      "y": 450,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dd8ef2cf919d56a30fbefc"
+      }
+    }
+  ],
+  "kvadratura": 200,
+  "datum": {
+    "$date": "2024-10-12T00:00:00.000Z"
+  },
+  "vreme": "15:00",
+  "tip": "Restoran",
+  "povrsinaZelenilo": 50,
+  "dodatniZahtevi": "",
+  "dekorater": "miljanavasic@gmail.com",
+  "korisnik": "jovanabjelica",
+  "status": "na cekanju",
+  "firma": "Graficki Paradoks",
+  "datumKreiranja": {
+    "$date": "2024-09-08T11:48:02.347Z"
+  },
+  "povrsinaFontana": 10,
+  "brojStolica": 5,
+  "brojStolova": 30
+},
+{
+  "_id": {
+    "$oid": "66dd8f3ecf919d56a30fbf9a"
+  },
+  "figure": [
+    {
+      "x": 75,
+      "y": 75,
+      "tip": "bazen",
+      "_id": {
+        "$oid": "66dd8f3ecf919d56a30fbf9b"
+      }
+    },
+    {
+      "x": 160,
+      "y": 120,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dd8f3ecf919d56a30fbf9c"
+      }
+    },
+    {
+      "x": 250,
+      "y": 200,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dd8f3ecf919d56a30fbf9d"
+      }
+    },
+    {
+      "x": 320,
+      "y": 270,
+      "tip": "zelenilo",
+      "_id": {
+        "$oid": "66dd8f3ecf919d56a30fbf9e"
+      }
+    },
+    {
+      "x": 400,
+      "y": 350,
+      "tip": "fontana",
+      "_id": {
+        "$oid": "66dd8f3ecf919d56a30fbf9f"
+      }
+    },
+    {
+      "x": 450,
+      "y": 400,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dd8f3ecf919d56a30fbfa0"
+      }
+    },
+    {
+      "x": 500,
+      "y": 450,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dd8f3ecf919d56a30fbfa1"
+      }
+    }
+  ],
+  "kvadratura": 55,
+  "datum": {
+    "$date": "2024-10-13T00:00:00.000Z"
+  },
+  "vreme": "12:00",
+  "tip": "Privatna",
+  "povrsinaZelenilo": 55,
+  "dodatniZahtevi": "",
+  "dekorater": "olgabozovic@gmail.com",
+  "korisnik": "jovanabjelica",
+  "status": "na cekanju",
+  "firma": "Graficki Paradoks",
+  "datumKreiranja": {
+    "$date": "2024-09-08T11:49:18.864Z"
+  },
+  "povrsinaBazen": 10,
+  "povrsinaLezaljke": 5,
+  "povrsinaStolovi": 5
+},
+{
+  "_id": {
+    "$oid": "66dd8f9ecf919d56a30fc04d"
+  },
+  "figure": [
+    {
+      "x": 75,
+      "y": 75,
+      "tip": "bazen",
+      "_id": {
+        "$oid": "66dd8f9ecf919d56a30fc04e"
+      }
+    },
+    {
+      "x": 160,
+      "y": 120,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dd8f9ecf919d56a30fc04f"
+      }
+    },
+    {
+      "x": 250,
+      "y": 200,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dd8f9ecf919d56a30fc050"
+      }
+    },
+    {
+      "x": 320,
+      "y": 270,
+      "tip": "zelenilo",
+      "_id": {
+        "$oid": "66dd8f9ecf919d56a30fc051"
+      }
+    },
+    {
+      "x": 400,
+      "y": 350,
+      "tip": "fontana",
+      "_id": {
+        "$oid": "66dd8f9ecf919d56a30fc052"
+      }
+    },
+    {
+      "x": 450,
+      "y": 400,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dd8f9ecf919d56a30fc053"
+      }
+    },
+    {
+      "x": 500,
+      "y": 450,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dd8f9ecf919d56a30fc054"
+      }
+    }
+  ],
+  "kvadratura": 56,
+  "datum": {
+    "$date": "2024-10-14T00:00:00.000Z"
+  },
+  "vreme": "16:00",
+  "tip": "Privatna",
+  "povrsinaZelenilo": 30,
+  "dodatniZahtevi": "",
+  "dekorater": "olgabozovic@gmail.com",
+  "korisnik": "marijakovacevic",
+  "status": "odobren",
+  "firma": "Graficki Paradoks",
+  "datumKreiranja": {
+    "$date": "2024-09-08T11:50:54.267Z"
+  },
+  "povrsinaBazen": 20,
+  "povrsinaLezaljke": 5,
+  "povrsinaStolovi": 5
+},
+{
+  "_id": {
+    "$oid": "66dd8fd0cf919d56a30fc10e"
+  },
+  "figure": [
+    {
+      "x": 75,
+      "y": 75,
+      "tip": "bazen",
+      "_id": {
+        "$oid": "66dd8fd0cf919d56a30fc10f"
+      }
+    },
+    {
+      "x": 160,
+      "y": 120,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dd8fd0cf919d56a30fc110"
+      }
+    },
+    {
+      "x": 250,
+      "y": 200,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dd8fd0cf919d56a30fc111"
+      }
+    },
+    {
+      "x": 320,
+      "y": 270,
+      "tip": "zelenilo",
+      "_id": {
+        "$oid": "66dd8fd0cf919d56a30fc112"
+      }
+    },
+    {
+      "x": 400,
+      "y": 350,
+      "tip": "fontana",
+      "_id": {
+        "$oid": "66dd8fd0cf919d56a30fc113"
+      }
+    },
+    {
+      "x": 450,
+      "y": 400,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dd8fd0cf919d56a30fc114"
+      }
+    },
+    {
+      "x": 500,
+      "y": 450,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dd8fd0cf919d56a30fc115"
+      }
+    }
+  ],
+  "kvadratura": 100,
+  "datum": {
+    "$date": "2024-10-15T00:00:00.000Z"
+  },
+  "vreme": "17:00",
+  "tip": "Restoran",
+  "povrsinaZelenilo": 60,
+  "dodatniZahtevi": "",
+  "dekorater": "olgabozovic@gmail.com",
+  "korisnik": "jovanabjelica",
+  "status": "na cekanju",
+  "firma": "Graficki Paradoks",
+  "datumKreiranja": {
+    "$date": "2024-09-08T11:51:44.684Z"
+  },
+  "povrsinaFontana": 0,
+  "brojStolica": 3,
+  "brojStolova": 10
+},
+{
+  "_id": {
+    "$oid": "66dd9023cf919d56a30fc2b3"
+  },
+  "figure": [
+    {
+      "x": 75,
+      "y": 75,
+      "tip": "bazen",
+      "_id": {
+        "$oid": "66dd9023cf919d56a30fc2b4"
+      }
+    },
+    {
+      "x": 160,
+      "y": 120,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dd9023cf919d56a30fc2b5"
+      }
+    },
+    {
+      "x": 250,
+      "y": 200,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dd9023cf919d56a30fc2b6"
+      }
+    },
+    {
+      "x": 320,
+      "y": 270,
+      "tip": "zelenilo",
+      "_id": {
+        "$oid": "66dd9023cf919d56a30fc2b7"
+      }
+    },
+    {
+      "x": 400,
+      "y": 350,
+      "tip": "fontana",
+      "_id": {
+        "$oid": "66dd9023cf919d56a30fc2b8"
+      }
+    },
+    {
+      "x": 450,
+      "y": 400,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dd9023cf919d56a30fc2b9"
+      }
+    },
+    {
+      "x": 500,
+      "y": 450,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dd9023cf919d56a30fc2ba"
+      }
+    }
+  ],
+  "kvadratura": 30,
+  "datum": {
+    "$date": "2024-10-13T00:00:00.000Z"
+  },
+  "vreme": "12:00",
+  "tip": "Privatna",
+  "povrsinaZelenilo": 30,
+  "dodatniZahtevi": "",
+  "dekorater": "stefanastefanovic@gmail.com",
+  "korisnik": "marijakovacevic",
+  "status": "na cekanju",
+  "firma": "Graficki Paradoks",
+  "datumKreiranja": {
+    "$date": "2024-09-08T11:53:07.697Z"
+  },
+  "povrsinaBazen": 0,
+  "povrsinaLezaljke": 2,
+  "povrsinaStolovi": 0
+},
+{
+  "_id": {
+    "$oid": "66dd9067cf919d56a30fc466"
+  },
+  "figure": [
+    {
+      "x": 75,
+      "y": 75,
+      "tip": "bazen",
+      "_id": {
+        "$oid": "66dd9067cf919d56a30fc467"
+      }
+    },
+    {
+      "x": 160,
+      "y": 120,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dd9067cf919d56a30fc468"
+      }
+    },
+    {
+      "x": 250,
+      "y": 200,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dd9067cf919d56a30fc469"
+      }
+    },
+    {
+      "x": 320,
+      "y": 270,
+      "tip": "zelenilo",
+      "_id": {
+        "$oid": "66dd9067cf919d56a30fc46a"
+      }
+    },
+    {
+      "x": 400,
+      "y": 350,
+      "tip": "fontana",
+      "_id": {
+        "$oid": "66dd9067cf919d56a30fc46b"
+      }
+    },
+    {
+      "x": 450,
+      "y": 400,
+      "tip": "sto",
+      "_id": {
+        "$oid": "66dd9067cf919d56a30fc46c"
+      }
+    },
+    {
+      "x": 500,
+      "y": 450,
+      "tip": "lezaljka-stolica",
+      "_id": {
+        "$oid": "66dd9067cf919d56a30fc46d"
+      }
+    }
+  ],
+  "kvadratura": 170,
+  "datum": {
+    "$date": "2024-10-16T00:00:00.000Z"
+  },
+  "vreme": "12:00",
+  "tip": "Restoran",
+  "povrsinaZelenilo": 200,
+  "dodatniZahtevi": "",
+  "dekorater": "olgabozovic@gmail.com",
+  "korisnik": "jovanabjelica",
+  "status": "odobren",
+  "firma": "Graficki Paradoks",
+  "datumKreiranja": {
+    "$date": "2024-09-08T11:54:15.443Z"
+  },
+  "povrsinaFontana": 5,
+  "brojStolica": 5,
+  "brojStolova": 20
+}]

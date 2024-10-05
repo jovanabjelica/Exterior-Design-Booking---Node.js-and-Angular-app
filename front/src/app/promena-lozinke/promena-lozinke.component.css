@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('../../assets/static/blackBackground1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(53, 51, 51, 0.75);
+    width: 80%;
+    max-width: 800px;
+    color: white;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.form-group input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.greska {
+    color: red;
+    font-size: 80%;
+}
+
+.button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1d06d;
+    color: black;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #e5b220;
+}
+
+a {
+    color: #f1d06d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #e5b220;
+    text-decoration: underline;
+}
+
+.linkovi {
+    margin-top: -4px;
+    font-size: 90%;
+}
+

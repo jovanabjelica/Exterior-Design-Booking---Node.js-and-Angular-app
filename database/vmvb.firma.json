@@ -1,0 +1,120 @@
+[{
+  "_id": {
+    "$oid": "66dce6b1b0b36a12ec934cd3"
+  },
+  "naziviUsluga": [
+    "uredjivanje basta bez bazena",
+    "uredjivanje sa bazenom"
+  ],
+  "ceneUsluga": [
+    15,
+    25
+  ],
+  "zaposleni": [
+    "olgabozovic@gmail.com",
+    "stefanastefanovic@gmail.com",
+    "miljanavasic@gmail.com"
+  ],
+  "naziv": "Graficki Paradoks",
+  "adresa": "Mirijevski venac 30",
+  "geografskaSirina": 44.79143,
+  "geografskaDuzina": 20.52822,
+  "kontakt_osoba": "miljanavasic@gmail.com",
+  "godisnji_odmor_pocetak": {
+    "$date": "2024-08-20T00:00:00.000Z"
+  },
+  "godisnji_odmor_kraj": {
+    "$date": "2024-09-20T00:00:00.000Z"
+  },
+  "ocena": 4,
+  "brojOcena": 1
+},
+{
+  "_id": {
+    "$oid": "66dce778b0b36a12ec934cd8"
+  },
+  "naziviUsluga": [
+    "uredjivanje basti u sklopu restorana",
+    "uredjivanje privatnih basti"
+  ],
+  "ceneUsluga": [
+    30,
+    18
+  ],
+  "zaposleni": [
+    "jovanmiletic@gmail.com",
+    "denisdesire@gmail.com",
+    "milanmiljevic@gmail.com"
+  ],
+  "naziv": "Oaza mira",
+  "adresa": "Bulevar Kralja Aleksandra 84",
+  "geografskaSirina": 44.80527389488152,
+  "geografskaDuzina": 20.4739331,
+  "kontakt_osoba": "milanmiljevic@gmail.com",
+  "godisnji_odmor_pocetak": {
+    "$date": "2024-09-20T00:00:00.000Z"
+  },
+  "godisnji_odmor_kraj": {
+    "$date": "2024-09-20T00:00:00.000Z"
+  },
+  "ocena": 0,
+  "brojOcena": 0
+},
+{
+  "_id": {
+    "$oid": "66dce809b0b36a12ec934cdd"
+  },
+  "naziviUsluga": [
+    "uredjivanje basti"
+  ],
+  "ceneUsluga": [
+    22
+  ],
+  "zaposleni": [
+    "milosmilenkovic@gmail.com",
+    "markonastic@gmail.com",
+    "josephvella@gmail.com"
+  ],
+  "naziv": "CCBill",
+  "adresa": "Dimitrija Tucovica",
+  "geografskaSirina": 44.80817405957384,
+  "geografskaDuzina": 20.482462524420054,
+  "kontakt_osoba": "josephvella@gmail.com",
+  "godisnji_odmor_pocetak": {
+    "$date": "2024-06-20T00:00:00.000Z"
+  },
+  "godisnji_odmor_kraj": {
+    "$date": "2024-07-25T00:00:00.000Z"
+  },
+  "ocena": 0,
+  "brojOcena": 0
+},
+{
+  "_id": {
+    "$oid": "66dce8aab0b36a12ec934ce2"
+  },
+  "naziviUsluga": [
+    "uredjivanje svih vrsta basti"
+  ],
+  "ceneUsluga": [
+    26
+  ],
+  "zaposleni": [
+    "radovanmarkovic@gmail.com",
+    "ildikodjordjevic@gmail.com",
+    "bogdandjordjevic@gmail.com"
+  ],
+  "naziv": "Soho",
+  "adresa": "Carlija Caplina",
+  "geografskaSirina": 44.81370756509784,
+  "geografskaDuzina": 20.484672664588796,
+  "kontakt_osoba": "bogdandjordjevic@gmail.com",
+  "godisnji_odmor_pocetak": {
+    "$date": "2024-08-20T00:00:00.000Z"
+  },
+  "godisnji_odmor_kraj": {
+    "$date": "2024-09-27T00:00:00.000Z"
+  },
+  "ocena": 0,
+  "brojOcena": 0
+}]

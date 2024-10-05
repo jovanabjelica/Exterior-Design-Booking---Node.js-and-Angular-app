@@ -1,0 +1,163 @@
+<div class="container">
+    <app-admin-side-menu></app-admin-side-menu>
+    <div class="main-content">
+        <header>
+            <h1>Firme</h1>
+            <div class="links">
+                <button (click)="otvoriModal()">⊹ Dodaj firmu</button>
+            </div>
+        </header>
+        <div id="myModal" class="modal" *ngIf="daLiJeModalOtvoren">
+            <div class="modal-content">
+                <span class="close" (click)="zatvoriModal()">&times;</span>
+                <div class="modal-container">
+                    <h2>➕ <span class="modal-tittle">Dodaj Firmu</span></h2>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="naziv">Unesite naziv:</label>
+                                <input 
+                                    type="text" 
+                                    name="naziv" 
+                                    id="naziv" 
+                                    [(ngModel)]="naziv" 
+                                    placeholder="Naziv"
+                                >
+                                <label for="naziv" class="greska">{{ greskaNaziv }}</label>
+                            </div>
+                            <div class="form-group">
+                                <label for="adresa">Unesite adresu(Naziv/Sirina/Duzina):</label>
+                                <input 
+                                    type="text" 
+                                    name="adresa" 
+                                    id="adresa" 
+                                    [(ngModel)]="adresa" 
+                                    placeholder="Adresa"
+                                >
+                                <label for="adresa" class="greska">{{ greskaAdresa }}</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nazivUsluge">Unesite naziv usluge:</label>
+                                <input 
+                                    type="text" 
+                                    name="nazivUsluge" 
+                                    id="nazivUsluge" 
+                                    [(ngModel)]="nazivUsluge" 
+                                    placeholder="Naziv Usluge"
+                                >
+                                <label for="nazivUsluge" class="greska">{{ greskaNazivUsluge }}</label>
+                            </div>
+                            <div class="form-group">
+                                <label for="cenaUsluge">Unesite cenu usluge (EUR):</label>
+                                <input 
+                                    type="number" 
+                                    name="cenaUsluge" 
+                                    id="cenaUsluge" 
+                                    [(ngModel)]="cenaUsluge" 
+                                    placeholder="Cena Usluge"
+                                >
+                                <label for="cenaUsluge" class="greska">{{ greskaCenaUsluge }}</label>
+                                <label for="cenaUsluge"><button class="button" (click)="dodajUslugu()">Dodaj uslugu</button></label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="godisnjiOdmorPocetak">Unesite pocetak godisnjeg odmora:</label>
+                                <input 
+                                    type="date" 
+                                    name="godisnjiOdmorPocetak" 
+                                    id="godisnjiOdmorPocetak" 
+                                    [(ngModel)]="godisnjiOdmorPocetak" 
+                                    placeholder="Pocetak godisnjeg odmora"
+                                >
+                                <label for="godisnjiOdmorPocetak" class="greska">{{ greskaGodisnjiOdmorPocetak }}</label>
+                            </div>
+                            <div class="form-group">
+                                <label for="godisnjiOdmorKraj">Unesite kraj godisnjeg odmora:</label>
+                                <input 
+                                    type="date" 
+                                    name="godisnjiOdmorKraj" 
+                                    id="godisnjiOdmorKraj" 
+                                    [(ngModel)]="godisnjiOdmorKraj" 
+                                    placeholder="Kraj godisnjeg odmora"
+                                >
+                                <label for="godisnjiOdmorKraj" class="greska">{{ greskaGodisnjiOdmorKraj }}</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="kontaktOsoba">Dodajte kontakt osobu:</label>
+                                <input 
+                                    type="text" 
+                                    name="kontaktOsoba" 
+                                    id="kontaktOsoba"
+                                    [(ngModel)]="kontaktOsoba"
+                                    placeholder="Kontakt osoba"
+                                >
+                                <label for="kontsktOsoba" class="greska"> {{ greskaKontaktOsoba }} </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="zaposleni">Dodajte zaposlenog:</label>
+                                <input 
+                                    type="text" 
+                                    name="zaposleni" 
+                                    id="zaposleni"
+                                    [(ngModel)]="zaposleniEmail"
+                                    placeholder="Email zaposlenog"
+                                >
+                                <label for="zaposleni" class="greska">{{ greskaZaposleni }}</label>
+                                <label for="zaposleni"><button class="button" (click)="dodajZaposlenog()">Dodaj zaposlenog</button></label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <button class="button-dodaj" (click)="dodajFirmu()">Dodaj Firmu</button>
+                            </div>
+                            <div class="form-group">
+                                <button class="button-otkazi" (click)="zatvoriModal()">Otkazi</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="table-container">
+            <div class="zero-state" *ngIf="firme.length == 0">
+                <table>
+                    <tr>
+                        <th>Naziv</th>
+                        <th>Adresa</th>
+                        <th>Pocetak godisnjeg odmora</th>
+                        <th>Kraj godisnjeg odmora</th>
+                        <th>Kontakt osoba</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td colspan="6" class="no-data">Trenutno nema podataka za prikazivanje</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="non-zero-state" *ngIf="firme.length > 0">
+                <table>
+                    <tr>
+                        <th>Naziv</th>
+                        <th>Adresa</th>
+                        <th>Pocetak godisnjeg odmora</th>
+                        <th>Kraj godisnjeg odmora</th>
+                        <th>Kontakt osoba</th>
+                    </tr>
+                    <tr *ngFor="let firma of firme">
+                        <td> {{ firma.naziv }} </td>
+                        <td> {{ firma.adresa }} </td>
+                        <td> {{ firma.godisnji_odmor_pocetak | date:'dd.MM.yyyy' }} </td>
+                        <td> {{ firma.godisnji_odmor_kraj | date:'dd.MM.yyyy' }} </td>
+                        <td><a [attr.href]="'mailto:' + firma.kontakt_osoba"> {{ firma.kontakt_osoba }} </a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

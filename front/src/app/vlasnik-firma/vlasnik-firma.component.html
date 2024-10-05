@@ -1,0 +1,281 @@
+<div class="container">
+    <app-vlasnik-side-menu></app-vlasnik-side-menu>
+    <div class="main-content">
+        <header>
+            <h1>{{ firma.naziv }}</h1>
+            <div class="links">
+                <a [routerLink]="['/vlasnik-firma', korisnik, firma.naziv]" class="link">Informacije</a>
+                <a [routerLink]="['/vlasnik-firma-lokacija', korisnik, firma.naziv]" class="link">Lokacija</a>
+                <button (click)="prviKorak()">Zakazi uredjivanje</button>
+            </div>
+        </header>
+        <div id="myModal1" class="modal" *ngIf="modal1Otvoren">
+            <div class="modal-content">
+                <span class="close" (click)="zatvoriModal()">&times;</span>
+
+                <h2><span class="modal-tittle">Zakazi uredjivanje</span></h2>
+                <hr>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="datum">Unesite datum:</label>
+                            <input 
+                                type="date" 
+                                name="datum" 
+                                id="datum"
+                                placeholder="Datum"
+                                [(ngModel)]="datum"
+                            >
+                            <label for="datum" class="greska">{{ datumGreska }}</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="vreme">Unesite vreme</label>
+                            <input 
+                                type="time" 
+                                name="vreme" 
+                                id="vreme"
+                                placeholder="vreme"
+                                [(ngModel)]="vreme"
+                            >
+                            <label for="vreme" class="greska">{{ vremeGreska }}</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="kvadratura">Unesite ukupnu kvadraturu baste:</label>
+                            <input 
+                                type="number" 
+                                name="kvadratura" 
+                                id="kvadratura"
+                                placeholder="Kvadratura baste"
+                                [(ngModel)]="kvadratura"
+                            >
+                            <label for="kvadratura" class="greska">{{ kvadraturaGreska }}</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="tip">Odaberite tip baste:</label>
+                            <div>Privatna basta <input type="radio" name="tip" id="Privatna" value="Privatna" [(ngModel)]="tip"></div>
+                            <div>Basta restorana <input type="radio" name="tip" id="Restoran" value="Restoran" [(ngModel)]="tip"></div>
+                            <label for="tip" class="greska">{{ tipGreska }}</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <button (click)="drugiKorak()">Sledeci korak</button>
+                        </div>
+                        <div class="form-group">
+                            <button class="button-otkazi" (click)="zatvoriModal()">Otkazi</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="myModal2" class="modal" *ngIf="modal2Otvoren">
+            <div class="modal-content">
+                <span class="close" (click)="zatvoriModal()">&times;</span>
+                <h2><span class="modal-tittle">Informacije o basti</span></h2>
+                <hr>
+                <form>
+                    <div class="form-row" *ngIf="tip=='Privatna'">
+                        <div class="form-group">
+                            <label for="povrsinaZelenilo">Unesite povrsinu zelenila:</label>
+                            <input 
+                                type="number" 
+                                name="povrsinaZelenilo" 
+                                id="povrsinaZelenilo"
+                                placeholder="Povrsina zelenila"
+                                [(ngModel)]="povrsinaZelenilo"
+                            >
+                            <label for="povrsinaZelenilo" class="greska"> {{ povrsinaZeleniloGreska }} </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="povrsinaBazen">Unesite povrsinu bazena:</label>
+                            <input 
+                                type="number" 
+                                name="povrsinaBazen" 
+                                id="povrsinaBazen"
+                                placeholder="Povrsina bazena"
+                                [(ngModel)]="povrsinaBazen"
+                            >
+                            <label for="povrsinaBazen" class="greska">{{ povrsinaBazenGreska }}</label>
+                        </div>
+                    </div>
+                    <div class="form-row" *ngIf="tip=='Privatna'">
+                        <div class="form-group">
+                            <label for="povrsinaLezaljke">Unesite povrsinu lezaljki:</label>
+                            <input 
+                                type="number" 
+                                name="povrsinaLezaljke" 
+                                id="povrsinaLezaljke"
+                                placeholder="Povrsina lezaljke"
+                                [(ngModel)]="povrsinaLezaljke"
+                            >
+                            <label for="povrsinaLezaljke" class="greska">{{ povrsinaLezaljkeGreska }}</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="povrsinaStolovi">Unesite povrsinu stolova:</label>
+                            <input 
+                                type="number" 
+                                name="povrsinaStolovi" 
+                                id="povrsinaStolovi"
+                                placeholder="Povrsina stolova"
+                                [(ngModel)]="povrsinaStolovi"
+                            >
+                            <label for="povrsinaStolovi" class="greska">{{ povrsinaStoloviGreska }}</label>
+                        </div>
+                    </div>
+                    <div class="form-row" *ngIf="tip=='Restoran'">
+                        <div class="form-group">
+                            <label for="povrsinaFontana">Unesite povrsinu fontane:</label>
+                            <input 
+                                type="number" 
+                                name="povrsinaFontana" 
+                                id="povrsinaFontana"
+                                placeholder="Povrsina fontane"
+                                [(ngModel)]="povrsinaFontana"
+                            >
+                            <label for="povrsinaFontana" class="greska">{{ povrsinaFontanaGreska }}</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="povrsinaZelenilo1">Unesite povrsinu zelenila:</label>
+                            <input 
+                                type="number" 
+                                name="povrsinaZelenilo1" 
+                                id="povrsinaZelenilo1"
+                                placeholder="Povrsina zelenila"
+                                [(ngModel)]="povrsinaZelenilo"
+                            >
+                            <label for="povrsinaZelenilo1" class="greska">{{ povrsinaZeleniloGreska }}</label>
+                        </div>
+                    </div>
+                    <div class="form-row" *ngIf="tip=='Restoran'">
+                        <div class="form-group">
+                            <label for="brojStolova">Unesite broj stolova:</label>
+                            <input 
+                                type="number" 
+                                name="brojStolova" 
+                                id="brojStolova"
+                                placeholder="Broj stolova"
+                                [(ngModel)]="brojStolova"
+                            >
+                            <label for="brojStolova" class="greska">{{ brojStolovaGreska }}</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="brojStolica">Unesite broj stolica:</label>
+                            <input 
+                                type="number" 
+                                name="brojStolica" 
+                                id="brojStolica"
+                                placeholder="Broj stolica"
+                                [(ngModel)]="brojStolica"
+                            >
+                            <label for="brojStolica" class="greska">{{ brojStolicaGreska }}</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="dodatno">Unesite dodatne napomene:</label>
+                            <textarea 
+                                name="dodatno" 
+                                id="dodatno"
+                                placeholder="Napomene"    
+                                rows="5"
+                                cols="50"
+                            >
+                            </textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="file">Unesite JSON file:</label>
+                            <input 
+                                type="file" 
+                                id="file"
+                                name="file"
+                                (change)="loadFromFile($event)" 
+                            />
+                            <label for="file" class="greska">{{ jsonFileGreska }}</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <button (click)="zakazi()">Zakazi</button>
+                        </div>
+                        <div class="form-group">
+                            <button class="button-otkazi" (click)="zatvoriModal()">Otkazi</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="myModal3" class="modal" *ngIf="prikaziCanvas">
+            <div class="modal-canvas-content">
+                <span class="close" (click)="ok()">&times;</span>
+                <h2><span class="modal-tittle">Izgled baste</span></h2>
+                <hr>
+                <div class="form-row">
+                    <canvas
+                        id="bastaCanvas" 
+                        width="600" 
+                        height="400"
+                    >
+                    </canvas>
+                </div>
+                <div class="form-row">
+                    <button (click)="ok()">Ok</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Adresa</th>
+                    <td> {{ firma.adresa }} </td>
+                </tr>
+                <tr>
+                    <th rowspan="firma.naziviUsluga.length">Usluge</th>
+                    <td>
+                        <table>
+                            <tr>
+                                <th>Naziv usluge</th>
+                                <th>Cena (EUR)</th>
+                            </tr>
+                            <tr *ngFor="let usluga of firma.naziviUsluga; let i = index">
+                                <td> {{ usluga }} </td>
+                                <td> {{ firma.ceneUsluga[i] }} </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Kontakt osoba</th>
+                    <td> <a [attr.href]="'mailto:' + firma.kontakt_osoba" class="link">{{ firma.kontakt_osoba }}</a></td>
+                </tr>
+                <tr>
+                    <th rowspan="firma.zaposleni.length">Dekorateri</th>
+                    <td>
+                        <table>
+                            <tr *ngFor="let z of firma.zaposleni">
+                                <td><a [attr.href]="'mailto:' + firma.kontakt_osoba" class="link">{{ z }}</a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <th rowspan="komentari.length">Recenzije</th>
+                    <td>
+                        <table style="width: 50%;">
+                            <tr>
+                                <th>Komentar</th>
+                                <th>Ocena</th>
+                            </tr>
+                            <tr *ngFor="let komentar of komentari; let i = index">
+                                <td>{{ komentar }}</td>
+                                <td>{{ ocene[i] }}</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>          
+            </table>
+        </div>
+    </div>
+</div>

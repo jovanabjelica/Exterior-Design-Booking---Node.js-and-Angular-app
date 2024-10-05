@@ -1,0 +1,19 @@
+<div class="container">
+    <app-vlasnik-side-menu></app-vlasnik-side-menu>
+    <div class="main-content">
+        <header>
+            <h1>{{ firma.naziv }}</h1>
+            <div class="links">
+                <a [routerLink]="['/vlasnik-firma', korisnik, firma.naziv]" class="link">Informacije</a>
+                <a [routerLink]="['/vlasnik-firma-lokacija', korisnik, firma.naziv]" class="link">Lokacija</a>
+            </div>
+        </header>
+        <hr>
+        <google-map height="580px" width="100%"
+            [center]="center"
+            [zoom]="15">
+            <map-marker [position]="center">
+            </map-marker>
+        </google-map>
+    </div>
+</div>

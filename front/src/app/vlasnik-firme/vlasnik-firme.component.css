@@ -1,0 +1,175 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; 
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f8f2f2; 
+}
+
+.main-content h1 {
+    font-size: 36px; 
+    margin: 0;
+    color: #333; 
+}
+
+.main-content header {
+    margin-bottom: 20px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    max-height: 450px;
+    overflow-y: auto;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc; 
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    border: 1px solid #ddd;
+    font-size: 18px; 
+}
+
+th, td {
+    padding: 15px; 
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+}
+
+th {
+    background-color: #ebe9e9;
+    font-weight: bold; 
+}
+
+tr:hover {
+    background-color: #cac8c8;
+}
+
+.zero-state .no-data {
+    text-align: center;
+    color: #888;
+}
+
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal container */
+.modal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.button {
+    padding: 7px 7px; 
+    border: 1px solid #ccc; 
+    font-size: 15px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    background-color: #333;
+    margin-top: 10px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: 48%;
+}
+
+.search-input input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+    font-size: 16px;
+}
+
+a {
+    color: #333;
+}
+
+a:visited {
+    color: #333;
+}
